@@ -43,7 +43,9 @@ namespace GrupoPlennus.Domain.Entities
         public string Bairro { get; set; }
         public string Cidade { get; set; }
         public string Uf { get; set; }
-        public string Telefone { get; set; }       
+        public string Telefone { get; set; }
+        public string Celular { get; set; }
+        public string Email { get; set; }
         public int ResidenciaAtualId { get; set; }      
         public int RendaComprovadaId { get; set; }
         public int RendaNaoComprovadaId { get; set; }       

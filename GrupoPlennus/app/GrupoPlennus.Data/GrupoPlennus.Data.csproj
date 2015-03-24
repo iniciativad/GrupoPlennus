@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contexts\PlennusContext.cs" />
+    <Compile Include="EntityConfig\ConjugeConfig.cs" />
+    <Compile Include="EntityConfig\DependenteConfig.cs" />
+    <Compile Include="EntityConfig\EntidadeConfig.cs" />
+    <Compile Include="EntityConfig\EntidadeMasterConfig.cs" />
+    <Compile Include="EntityConfig\PessoaConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -59,8 +65,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Contexts\" />
-    <Folder Include="EntityConfig\" />
     <Folder Include="Repositories\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
