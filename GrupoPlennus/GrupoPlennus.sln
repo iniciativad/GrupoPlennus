@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22609.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Presentation", "0 - Presentation", "{B64DDC5F-FEE3-4E31-BB7B-1BB85E7B2420}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{A00694A3-5699-4B52-8A62-714DB4E35A21}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{A079B8A2-2A98-46BB-BB45-E439B25F0BE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Data", "4 - Data", "{D4617DF2-3282-46E4-9EAA-17F494000241}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", "{596DF4B3-10B7-40E1-8634-E37B888871AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Services", "1 - Services", "{C77C6C6D-0220-4017-B016-F18536AE8ED3}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{596DF4B3-10B7-40E1-8634-E37B888871AB} = {D4617DF2-3282-46E4-9EAA-17F494000241}
+	EndGlobalSection
+EndGlobal
