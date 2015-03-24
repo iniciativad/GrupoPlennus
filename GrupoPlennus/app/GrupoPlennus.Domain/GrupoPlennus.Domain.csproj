@@ -50,10 +50,15 @@
     <Compile Include="Interfaces\IEntidadeRepository.cs" />
     <Compile Include="Interfaces\IPessoaRepository.cs" />
     <Compile Include="Interfaces\IRepositoryBase.cs" />
+    <Compile Include="Interfaces\Services\IConjugeService.cs" />
+    <Compile Include="Interfaces\Services\IDependenteService.cs" />
+    <Compile Include="Interfaces\Services\IEntidadeMasterService.cs" />
+    <Compile Include="Interfaces\Services\IEntidadeService.cs" />
+    <Compile Include="Interfaces\Services\IPessoaService.cs" />
+    <Compile Include="Interfaces\Services\IServiceBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Interfaces\Services\" />
     <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

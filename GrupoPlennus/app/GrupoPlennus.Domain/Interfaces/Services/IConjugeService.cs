@@ -1,9 +1,9 @@
 ﻿using GrupoPlennus.Domain.Entities;
 using System.Collections.Generic;
 
-namespace GrupoPlennus.Domain.Interfaces
+namespace GrupoPlennus.Domain.Interfaces.Services
 {
-    public interface IConjugeRepository : IRepositoryBase<Conjuge>
+    public interface IConjugeService : IServiceBase<Conjuge>
     {
         IEnumerable<Conjuge> BuscaPorNome(string nome);
         IEnumerable<Conjuge> BuscaPorCpf(string cpf);
