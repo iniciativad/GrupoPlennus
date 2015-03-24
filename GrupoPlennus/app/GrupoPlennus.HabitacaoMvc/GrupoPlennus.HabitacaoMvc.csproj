@@ -177,6 +177,9 @@
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="AutoMapper\AutoMapperConfig.cs" />
+    <Compile Include="AutoMapper\DomainToViewModelMappingProfile.cs" />
+    <Compile Include="AutoMapper\ViewModelToDomainMappingProfile.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -188,6 +191,11 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\ConjugeViewModel.cs" />
+    <Compile Include="ViewModels\DependenteViewModel.cs" />
+    <Compile Include="ViewModels\EntidadeMasterViewModel.cs" />
+    <Compile Include="ViewModels\EntidadeViewModel.cs" />
+    <Compile Include="ViewModels\PessoaViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -255,6 +263,20 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GrupoPlennus.Application\GrupoPlennus.Application.csproj">
+      <Project>{471cc6b4-2466-4185-ae37-0b8974d02847}</Project>
+      <Name>GrupoPlennus.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GrupoPlennus.Data\GrupoPlennus.Data.csproj">
+      <Project>{bf86409d-bb3c-47cf-a396-56a3c9baa8d8}</Project>
+      <Name>GrupoPlennus.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GrupoPlennus.Domain\GrupoPlennus.Domain.csproj">
+      <Project>{76491be8-0e43-421f-bbe2-d382ce7d6e8c}</Project>
+      <Name>GrupoPlennus.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
