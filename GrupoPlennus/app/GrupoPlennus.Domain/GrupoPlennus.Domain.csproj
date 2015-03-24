@@ -44,6 +44,12 @@
     <Compile Include="Entities\Entidade.cs" />
     <Compile Include="Entities\EntidadeMaster.cs" />
     <Compile Include="Entities\Pessoa.cs" />
+    <Compile Include="Interfaces\IConjugeRepository.cs" />
+    <Compile Include="Interfaces\IDependenteRepository.cs" />
+    <Compile Include="Interfaces\IEntidadeMasterRepository.cs" />
+    <Compile Include="Interfaces\IEntidadeRepository.cs" />
+    <Compile Include="Interfaces\IPessoaRepository.cs" />
+    <Compile Include="Interfaces\IRepositoryBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
