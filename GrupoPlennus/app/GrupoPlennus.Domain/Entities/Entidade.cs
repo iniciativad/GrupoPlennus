@@ -37,5 +37,6 @@ namespace GrupoPlennus.Domain.Entities
         public int EntidadeMasterId { get; set; }
         public virtual EntidadeMaster EntiadeMaster { get; set; }
         public virtual IEnumerable<Pessoa> Pessoas { get; set; }
+        public DateTime  DataCadastro { get; set; }
     }
 }

@@ -16,7 +16,7 @@ namespace GrupoPlennus.Domain.Entities
         public string RgOrgaoEmissor { get; set; }
         public string RgSiglaOrgaoEmissor { get; set; }
         public string RgDataExpedicao { get; set; }
-        public string Pis { get; set; }
+        
         public string TituloEleitor { get; set; }
         public string TituloEleitorZona { get; set; }
         public string TituloEleitorSecao { get; set; }
@@ -46,21 +46,17 @@ namespace GrupoPlennus.Domain.Entities
         public string Telefone { get; set; }
         public string Celular { get; set; }
         public string Email { get; set; }
-        public int ResidenciaAtualId { get; set; }
-        public int RendaComprovadaId { get; set; }
-        public int RendaNaoComprovadaId { get; set; }
-        public int UltimoEmpregoAnos { get; set; }
-        public int UltimoEmpregoMes { get; set; }
-        public int UltimoEmpregoAnoDesligamento { get; set; }
+        
+        public decimal? RendaComprovada { get; set; }
+        public decimal? RendaNaoComprovada { get; set; }
+        public int? UltimoEmpregoAnos { get; set; }
+        public int? UltimoEmpregoMes { get; set; }
+        public int? UltimoEmpregoAnoDesligamento { get; set; }
         public string CargoFuncao { get; set; }
         public int DocumentosComplementares { get; set; }
-        public int InformacoesPatrimoniaisId { get; set; }
-        public bool PossuiImoveis { get; set; }
-        public bool PossuiVeiculos { get; set; }
-        public int CartaoCreditoId { get; set; }
-        public int ContaOutrosBancosId { get; set; }
-        public int AplicacoesForaCaixaId { get; set; }             
-        public int EntidadeId { get; set; }
+       
+              
+       
         public int PessoaId { get; set; }
         public virtual Pessoa Pessoa { get; set; }
         public DateTime DataCadastro { get; set; }

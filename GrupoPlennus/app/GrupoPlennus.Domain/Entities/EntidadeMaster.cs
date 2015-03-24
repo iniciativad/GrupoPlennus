@@ -23,7 +23,7 @@ namespace GrupoPlennus.Domain.Entities
         public string Responsavel { get; set; }
         public string ResponsavelCpf { get; set; }
         public string ResponsavelCargo { get; set; }
-        public string TipoEntidade { get; set; }
+       
         public DateTime DataFundacao { get; set; }
         public string OutrasExperienciasHabitacao { get; set; }
         public string FiliacaoMovimentoNacional { get; set; }
@@ -31,7 +31,7 @@ namespace GrupoPlennus.Domain.Entities
         public string BancoAgencia { get; set; }
         public string BancoConta { get; set; }
         public string BancoOperacao { get; set; }
-
+        public DateTime DataCadastro { get; set; }
         public virtual IEnumerable<Entidade> Entidades { get; set; }
     }
 }
