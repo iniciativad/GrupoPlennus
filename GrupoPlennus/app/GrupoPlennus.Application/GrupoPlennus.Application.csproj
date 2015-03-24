@@ -39,12 +39,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppServiceBase.cs" />
+    <Compile Include="ConjugeAppService.cs" />
+    <Compile Include="DependenteAppService.cs" />
+    <Compile Include="EntidadeAppService.cs" />
+    <Compile Include="EntidadeMasterAppService.cs" />
     <Compile Include="Interfaces\IAppServiceBase.cs" />
     <Compile Include="Interfaces\IConjugeAppService.cs" />
     <Compile Include="Interfaces\IDependenteAppService.cs" />
     <Compile Include="Interfaces\IEntidadeAppService.cs" />
     <Compile Include="Interfaces\IEntidadeMasterAppService.cs" />
     <Compile Include="Interfaces\IPessoaAppService.cs" />
+    <Compile Include="PessoaAppService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
