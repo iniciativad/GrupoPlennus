@@ -16,6 +16,11 @@ namespace GrupoPlennus.Domain.Entities
         public string RgOrgaoEmissor { get; set; }      
         public string RgSiglaOrgaoEmissor { get; set; }        
         public string RgDataExpedicao { get; set; }
+        public string TituloEleitor { get; set; }
+        public string TituloEleitorZona { get; set; }
+        public string TituloEleitorSecao { get; set; }
+        public string TituloEleitorMunicipio { get; set; }
+        public string TituloEleitorUf { get; set; }
         public string Pis { get; set; }      
         public int EstadoCivilId { get; set; }        
         public string Profissao { get; set; }    
