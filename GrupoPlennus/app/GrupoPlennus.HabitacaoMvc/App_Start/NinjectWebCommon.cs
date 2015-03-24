@@ -10,6 +10,12 @@ namespace GrupoPlennus.HabitacaoMvc.App_Start
 
     using Ninject;
     using Ninject.Web.Common;
+    using GrupoPlennus.Application.Interfaces;
+    using GrupoPlennus.Application;
+    using GrupoPlennus.Domain.Interfaces.Services;
+    using GrupoPlennus.Domain.Services;
+    using GrupoPlennus.Domain.Interfaces;
+    using GrupoPlennus.Data.Repositories;
 
     public static class NinjectWebCommon 
     {
@@ -61,6 +67,35 @@ namespace GrupoPlennus.HabitacaoMvc.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
+            kernel.Bind(typeof(IAppServiceBase<>)).To(typeof(AppServiceBase<>));
+            
+            kernel.Bind<IConjugeAppService>().To<ConjugeAppService>();
+            kernel.Bind<IDependenteAppService>().To<DependenteAppService>();
+            kernel.Bind<IEntidadeAppService>().To<EntidadeAppService>();
+            kernel.Bind<IEntidadeMasterAppService>().To<EntidadeMasterAppService>();
+            kernel.Bind<IPessoaAppService>().To<PessoaAppService>();
+            
+
+
+
+
+
+            kernel.Bind(typeof(IServiceBase<>)).To(typeof(ServiceBase<>));
+            
+            kernel.Bind<IDependenteService>().To<DependenteService>();
+            kernel.Bind<IEntidadeService>().To<EntidadeService>();
+            kernel.Bind<IEntidadeMasterService>().To<EntidadeMasterService>();
+            kernel.Bind<IPessoaService>().To<PessoaService>();
+            kernel.Bind<IConjugeService>().To<ConjugeService>();
+
+
+            kernel.Bind(typeof(IRepositoryBase<>)).To(typeof(RepositoryBase<>));
+            kernel.Bind<IConjugeRepository>().To<ConjugeRepository>();
+            kernel.Bind<IDependenteRepository>().To<DependenteRepository>();
+            kernel.Bind<IEntidadeRepository>().To<EntidadeRepository>();
+            kernel.Bind<IEntidadeMasterRepository>().To<EntidadeMasterRepository>();
+            kernel.Bind<IPessoaRepository>().To<PessoaRepository>();
+           
         }        
     }
 }
