@@ -15,11 +15,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Services", "1 - Services", "{C77C6C6D-0220-4017-B016-F18536AE8ED3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrupoPlennus.Domain", "app\GrupoPlennus.Domain\GrupoPlennus.Domain.csproj", "{76491BE8-0E43-421F-BBE2-D382CE7D6E8C}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76491BE8-0E43-421F-BBE2-D382CE7D6E8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76491BE8-0E43-421F-BBE2-D382CE7D6E8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76491BE8-0E43-421F-BBE2-D382CE7D6E8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76491BE8-0E43-421F-BBE2-D382CE7D6E8C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{596DF4B3-10B7-40E1-8634-E37B888871AB} = {D4617DF2-3282-46E4-9EAA-17F494000241}
+		{76491BE8-0E43-421F-BBE2-D382CE7D6E8C} = {A079B8A2-2A98-46BB-BB45-E439B25F0BE3}
 	EndGlobalSection
 EndGlobal
