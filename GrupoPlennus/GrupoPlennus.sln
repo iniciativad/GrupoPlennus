@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrupoPlennus.Domain", "app\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrupoPlennus.Data", "app\GrupoPlennus.Data\GrupoPlennus.Data.csproj", "{BF86409D-BB3C-47CF-A396-56A3C9BAA8D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrupoPlennus.HabitacaoMvc", "app\GrupoPlennus.HabitacaoMvc\GrupoPlennus.HabitacaoMvc.csproj", "{5B6081C1-F06D-4967-AFB6-0D5BC92773C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{BF86409D-BB3C-47CF-A396-56A3C9BAA8D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF86409D-BB3C-47CF-A396-56A3C9BAA8D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF86409D-BB3C-47CF-A396-56A3C9BAA8D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B6081C1-F06D-4967-AFB6-0D5BC92773C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B6081C1-F06D-4967-AFB6-0D5BC92773C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B6081C1-F06D-4967-AFB6-0D5BC92773C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B6081C1-F06D-4967-AFB6-0D5BC92773C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,5 +47,6 @@ Global
 		{596DF4B3-10B7-40E1-8634-E37B888871AB} = {D4617DF2-3282-46E4-9EAA-17F494000241}
 		{76491BE8-0E43-421F-BBE2-D382CE7D6E8C} = {A079B8A2-2A98-46BB-BB45-E439B25F0BE3}
 		{BF86409D-BB3C-47CF-A396-56A3C9BAA8D8} = {596DF4B3-10B7-40E1-8634-E37B888871AB}
+		{5B6081C1-F06D-4967-AFB6-0D5BC92773C8} = {B64DDC5F-FEE3-4E31-BB7B-1BB85E7B2420}
 	EndGlobalSection
 EndGlobal

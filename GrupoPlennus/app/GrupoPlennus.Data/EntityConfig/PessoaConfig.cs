@@ -3,7 +3,7 @@ using System.Data.Entity.ModelConfiguration;
 
 namespace GrupoPlennus.Data.EntityConfig
 {
-    public class PessoaConfig : EntityTypeConfiguration<Dependente>
+    public class PessoaConfig : EntityTypeConfiguration<Pessoa>
     {
         public PessoaConfig()
         {

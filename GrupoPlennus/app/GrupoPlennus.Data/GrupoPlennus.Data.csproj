@@ -52,6 +52,7 @@
     <Compile Include="EntityConfig\EntidadeConfig.cs" />
     <Compile Include="EntityConfig\EntidadeMasterConfig.cs" />
     <Compile Include="EntityConfig\PessoaConfig.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ConjugeRepository.cs" />
     <Compile Include="Repositories\DependenteRepository.cs" />
