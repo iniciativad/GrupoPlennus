@@ -40,7 +40,7 @@ namespace GrupoPlennus.HabitacaoMvc.Controllers
         public ActionResult Create()
         {
             ViewBag.EntidadeMasterId = new SelectList(_entidadeMasterApp.GetAll(), "Id", "NomeFantasia");
-            ViewBag.TipoEntidadeId = new SelectList(_entidadeTiposApp.GetAll(), "Id", "Descricao");
+            ViewBag.EntidadeTiposId = new SelectList(_entidadeTiposApp.GetAll(), "Id", "Descricao");
             return View();
         }
 
@@ -57,7 +57,7 @@ namespace GrupoPlennus.HabitacaoMvc.Controllers
                 return RedirectToAction("Index");
             }
             ViewBag.EntidadeMasterId = new SelectList(_entidadeMasterApp.GetAll(), "Id", "NomeFantasia", entidade.EntidadeMasterId);
-            ViewBag.TipoEntidadeId = new SelectList(_entidadeTiposApp.GetAll(), "Id", "Descricao", entidade.EntidadeTiposId);
+            ViewBag.EntidadeTiposId = new SelectList(_entidadeTiposApp.GetAll(), "Id", "Descricao", entidade.EntidadeTiposId);
             return View(entidade);
         }
 
@@ -67,7 +67,7 @@ namespace GrupoPlennus.HabitacaoMvc.Controllers
             var entidade = _entidadeApp.GetById(id);          
             var entidadeViewModel = Mapper.Map<Entidade, EntidadeViewModel>(entidade);
             ViewBag.EntidadeMasterId = new SelectList(_entidadeMasterApp.GetAll(), "Id", "NomeFantasia", entidadeViewModel.EntidadeMasterId);
-            ViewBag.EntidadeTipoId = new SelectList(_entidadeTiposApp.GetAll(), "Id", "Descricao", entidadeViewModel.EntidadeTiposId);
+            ViewBag.EntidadeTiposId = new SelectList(_entidadeTiposApp.GetAll(), "Id", "Descricao", entidadeViewModel.EntidadeTiposId);
 
             return View(entidadeViewModel);
         }
@@ -85,7 +85,7 @@ namespace GrupoPlennus.HabitacaoMvc.Controllers
                 return RedirectToAction("Index");
             }
             ViewBag.EntidadeMasterId = new SelectList(_entidadeMasterApp.GetAll(), "Id", "NomeFantasia", entidade.EntidadeMasterId);
-            ViewBag.EntidadeTipoId = new SelectList(_entidadeTiposApp.GetAll(), "Id", "Descricao", entidade.EntidadeTiposId);
+            ViewBag.EntidadeTiposId = new SelectList(_entidadeTiposApp.GetAll(), "Id", "Descricao", entidade.EntidadeTiposId);
             return View(entidade);
         }
 

@@ -17,6 +17,7 @@ namespace GrupoPlennus.HabitacaoMvc.AutoMapper
             Mapper.CreateMap<ConjugeViewModel, Conjuge>();
             Mapper.CreateMap<DependenteViewModel, Dependente>();
             Mapper.CreateMap<EntidadeViewModel, Entidade>();
+            Mapper.CreateMap<EntidadeTiposViewModel, EntidadeTipos>();
             Mapper.CreateMap<EntidadeMasterViewModel, EntidadeMaster>();            
             Mapper.CreateMap<PessoaViewModel, Pessoa>();
            

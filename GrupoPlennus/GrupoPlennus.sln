@@ -26,23 +26,32 @@ EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		pp|Any CPU = pp|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{76491BE8-0E43-421F-BBE2-D382CE7D6E8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{76491BE8-0E43-421F-BBE2-D382CE7D6E8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76491BE8-0E43-421F-BBE2-D382CE7D6E8C}.pp|Any CPU.ActiveCfg = pp|Any CPU
+		{76491BE8-0E43-421F-BBE2-D382CE7D6E8C}.pp|Any CPU.Build.0 = pp|Any CPU
 		{76491BE8-0E43-421F-BBE2-D382CE7D6E8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76491BE8-0E43-421F-BBE2-D382CE7D6E8C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BF86409D-BB3C-47CF-A396-56A3C9BAA8D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BF86409D-BB3C-47CF-A396-56A3C9BAA8D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF86409D-BB3C-47CF-A396-56A3C9BAA8D8}.pp|Any CPU.ActiveCfg = pp|Any CPU
+		{BF86409D-BB3C-47CF-A396-56A3C9BAA8D8}.pp|Any CPU.Build.0 = pp|Any CPU
 		{BF86409D-BB3C-47CF-A396-56A3C9BAA8D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF86409D-BB3C-47CF-A396-56A3C9BAA8D8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5B6081C1-F06D-4967-AFB6-0D5BC92773C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5B6081C1-F06D-4967-AFB6-0D5BC92773C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B6081C1-F06D-4967-AFB6-0D5BC92773C8}.pp|Any CPU.ActiveCfg = pp|Any CPU
+		{5B6081C1-F06D-4967-AFB6-0D5BC92773C8}.pp|Any CPU.Build.0 = pp|Any CPU
 		{5B6081C1-F06D-4967-AFB6-0D5BC92773C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B6081C1-F06D-4967-AFB6-0D5BC92773C8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{471CC6B4-2466-4185-AE37-0B8974D02847}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{471CC6B4-2466-4185-AE37-0B8974D02847}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{471CC6B4-2466-4185-AE37-0B8974D02847}.pp|Any CPU.ActiveCfg = pp|Any CPU
+		{471CC6B4-2466-4185-AE37-0B8974D02847}.pp|Any CPU.Build.0 = pp|Any CPU
 		{471CC6B4-2466-4185-AE37-0B8974D02847}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{471CC6B4-2466-4185-AE37-0B8974D02847}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection

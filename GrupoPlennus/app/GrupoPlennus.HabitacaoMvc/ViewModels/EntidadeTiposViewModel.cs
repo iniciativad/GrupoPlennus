@@ -6,7 +6,7 @@ namespace GrupoPlennus.HabitacaoMvc.ViewModels
     {
         [Key]
         public int Id { get; set; }
-        [Display(Name ="Descrição")]
+       
         public string Descricao { get; set; }
     }
 }
