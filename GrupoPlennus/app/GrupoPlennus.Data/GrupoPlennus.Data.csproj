@@ -58,6 +58,7 @@
     <Compile Include="Repositories\DependenteRepository.cs" />
     <Compile Include="Repositories\EntidadeMasterRepository.cs" />
     <Compile Include="Repositories\EntidadeRepository.cs" />
+    <Compile Include="Repositories\EntidadeTiposRepository.cs" />
     <Compile Include="Repositories\PessoaRepository.cs" />
     <Compile Include="Repositories\RepositoryBase.cs" />
   </ItemGroup>

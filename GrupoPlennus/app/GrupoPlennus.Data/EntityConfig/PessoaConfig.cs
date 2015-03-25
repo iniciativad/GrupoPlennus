@@ -12,6 +12,9 @@ namespace GrupoPlennus.Data.EntityConfig
             Property(p => p.Nome).
                 IsRequired();
 
+            Property(p => p.Nis).
+               IsRequired();
+
             Property(p => p.Email)
                 .HasMaxLength(160);
 

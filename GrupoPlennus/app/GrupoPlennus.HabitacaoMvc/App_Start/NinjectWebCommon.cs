@@ -17,20 +17,20 @@ namespace GrupoPlennus.HabitacaoMvc.App_Start
     using GrupoPlennus.Domain.Interfaces;
     using GrupoPlennus.Data.Repositories;
 
-    public static class NinjectWebCommon 
+    public static class NinjectWebCommon
     {
         private static readonly Bootstrapper bootstrapper = new Bootstrapper();
 
         /// <summary>
         /// Starts the application
         /// </summary>
-        public static void Start() 
+        public static void Start()
         {
             DynamicModuleUtility.RegisterModule(typeof(OnePerRequestHttpModule));
             DynamicModuleUtility.RegisterModule(typeof(NinjectHttpModule));
             bootstrapper.Initialize(CreateKernel);
         }
-        
+
         /// <summary>
         /// Stops the application.
         /// </summary>
@@ -38,7 +38,7 @@ namespace GrupoPlennus.HabitacaoMvc.App_Start
         {
             bootstrapper.ShutDown();
         }
-        
+
         /// <summary>
         /// Creates the kernel that will manage your application.
         /// </summary>
@@ -68,26 +68,26 @@ namespace GrupoPlennus.HabitacaoMvc.App_Start
         private static void RegisterServices(IKernel kernel)
         {
             kernel.Bind(typeof(IAppServiceBase<>)).To(typeof(AppServiceBase<>));
-            
+
             kernel.Bind<IConjugeAppService>().To<ConjugeAppService>();
             kernel.Bind<IDependenteAppService>().To<DependenteAppService>();
             kernel.Bind<IEntidadeAppService>().To<EntidadeAppService>();
             kernel.Bind<IEntidadeMasterAppService>().To<EntidadeMasterAppService>();
             kernel.Bind<IPessoaAppService>().To<PessoaAppService>();
-            
+            kernel.Bind<IEntidadeTiposAppService>().To<EntidadeTiposAppService>();
 
 
 
 
 
             kernel.Bind(typeof(IServiceBase<>)).To(typeof(ServiceBase<>));
-            
+
             kernel.Bind<IDependenteService>().To<DependenteService>();
             kernel.Bind<IEntidadeService>().To<EntidadeService>();
             kernel.Bind<IEntidadeMasterService>().To<EntidadeMasterService>();
             kernel.Bind<IPessoaService>().To<PessoaService>();
             kernel.Bind<IConjugeService>().To<ConjugeService>();
-
+            kernel.Bind<IEntidadeTiposService>().To<EntidadeTiposService>();
 
             kernel.Bind(typeof(IRepositoryBase<>)).To(typeof(RepositoryBase<>));
             kernel.Bind<IConjugeRepository>().To<ConjugeRepository>();
@@ -95,7 +95,7 @@ namespace GrupoPlennus.HabitacaoMvc.App_Start
             kernel.Bind<IEntidadeRepository>().To<EntidadeRepository>();
             kernel.Bind<IEntidadeMasterRepository>().To<EntidadeMasterRepository>();
             kernel.Bind<IPessoaRepository>().To<PessoaRepository>();
-           
-        }        
+            kernel.Bind<IEntidadeTiposRepository>().To<EntidadeTiposRepository>();
+        }
     }
 }

@@ -43,17 +43,20 @@
     <Compile Include="Entities\Dependente.cs" />
     <Compile Include="Entities\Entidade.cs" />
     <Compile Include="Entities\EntidadeMaster.cs" />
+    <Compile Include="Entities\EntidadeTipos.cs" />
     <Compile Include="Entities\Pessoa.cs" />
     <Compile Include="Interfaces\IConjugeRepository.cs" />
     <Compile Include="Interfaces\IDependenteRepository.cs" />
     <Compile Include="Interfaces\IEntidadeMasterRepository.cs" />
     <Compile Include="Interfaces\IEntidadeRepository.cs" />
+    <Compile Include="Interfaces\IEntidadeTiposRepository.cs" />
     <Compile Include="Interfaces\IPessoaRepository.cs" />
     <Compile Include="Interfaces\IRepositoryBase.cs" />
     <Compile Include="Interfaces\Services\IConjugeService.cs" />
     <Compile Include="Interfaces\Services\IDependenteService.cs" />
     <Compile Include="Interfaces\Services\IEntidadeMasterService.cs" />
     <Compile Include="Interfaces\Services\IEntidadeService.cs" />
+    <Compile Include="Interfaces\Services\IEntidadeTiposService.cs" />
     <Compile Include="Interfaces\Services\IPessoaService.cs" />
     <Compile Include="Interfaces\Services\IServiceBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -61,6 +64,7 @@
     <Compile Include="Services\DependenteService.cs" />
     <Compile Include="Services\EntidadeMasterService.cs" />
     <Compile Include="Services\EntidadeService.cs" />
+    <Compile Include="Services\EntidadeTiposService.cs" />
     <Compile Include="Services\PessoaService.cs" />
     <Compile Include="Services\ServiceBase.cs" />
   </ItemGroup>

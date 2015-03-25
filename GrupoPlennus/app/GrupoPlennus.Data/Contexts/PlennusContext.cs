@@ -20,6 +20,7 @@ namespace GrupoPlennus.Data.Contexts
         public DbSet<Entidade> Entidade { get; set; }
         public DbSet<EntidadeMaster> EntidadeMaster { get; set; }
         public DbSet<Pessoa> Pessoa { get; set; }
+        public DbSet<EntidadeTipos> EntidadeTipos { get; set; }
 
 
 

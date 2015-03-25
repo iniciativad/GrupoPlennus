@@ -12,7 +12,7 @@ namespace GrupoPlennus.HabitacaoMvc.ViewModels
         public string RazaoSocial { get; set; }
         [Display(Name = "Nome Fantasia")]
         public string NomeFantasia { get; set; }
-
+        
         public string Cnpj { get; set; }
 
         public string Logradouro { get; set; }
@@ -31,11 +31,16 @@ namespace GrupoPlennus.HabitacaoMvc.ViewModels
         public string Responsavel { get; set; }
         [Display(Name = "Cpf do responsável")]
         public string ResponsavelCpf { get; set; }
-        [Display(Name = "Cargo/Função responsável")]
+        [Display(Name = "Cargo/Função do responsável")]
         public string ResponsavelCargo { get; set; }
-        public int TipoEntidadeId { get; set; }
+        [Display(Name ="Tipo de entidade")]
+        public int EntidadeTiposId { get; set; }
+        public virtual EntidadeTiposViewModel EntidadeTipos { get; set; }
+        [Display(Name ="Data da fundação")]
         public DateTime DataFundacao { get; set; }
+        [Display(Name ="Outras Experiêncis com habitação")]
         public string OutrasExperienciasHabitacao { get; set; }
+        [Display(Name ="É filiado há movimento nacional, Qual?")]
         public string FiliacaoMovimentoNacional { get; set; }
         public string Banco { get; set; }
         [Display(Name = "Banco - Agência")]
@@ -44,6 +49,7 @@ namespace GrupoPlennus.HabitacaoMvc.ViewModels
         public string BancoConta { get; set; }
         [Display(Name = "Banco - Operação")]
         public string BancoOperacao { get; set; }
+        [Display(Name ="Entidade-Vinculo")]
         public int EntidadeMasterId { get; set; }
         public virtual EntidadeMasterViewModel EntiadeMaster { get; set; }
         public virtual IEnumerable<PessoaViewModel> Pessoas { get; set; }

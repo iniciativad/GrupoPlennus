@@ -181,6 +181,8 @@
     <Compile Include="AutoMapper\DomainToViewModelMappingProfile.cs" />
     <Compile Include="AutoMapper\ViewModelToDomainMappingProfile.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\EntidadeController.cs" />
+    <Compile Include="Controllers\EntidadeMasterController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -194,6 +196,7 @@
     <Compile Include="ViewModels\ConjugeViewModel.cs" />
     <Compile Include="ViewModels\DependenteViewModel.cs" />
     <Compile Include="ViewModels\EntidadeMasterViewModel.cs" />
+    <Compile Include="ViewModels\EntidadeTiposViewModel.cs" />
     <Compile Include="ViewModels\EntidadeViewModel.cs" />
     <Compile Include="ViewModels\PessoaViewModel.cs" />
   </ItemGroup>
@@ -253,6 +256,16 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\EntidadeMaster\Index.cshtml" />
+    <Content Include="Views\EntidadeMaster\Details.cshtml" />
+    <Content Include="Views\EntidadeMaster\Create.cshtml" />
+    <Content Include="Views\EntidadeMaster\Edit.cshtml" />
+    <Content Include="Views\EntidadeMaster\Delete.cshtml" />
+    <Content Include="Views\Entidade\Index.cshtml" />
+    <Content Include="Views\Entidade\Details.cshtml" />
+    <Content Include="Views\Entidade\Create.cshtml" />
+    <Content Include="Views\Entidade\Edit.cshtml" />
+    <Content Include="Views\Entidade\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

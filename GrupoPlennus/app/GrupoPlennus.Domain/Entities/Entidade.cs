@@ -26,7 +26,8 @@ namespace GrupoPlennus.Domain.Entities
         public string Responsavel { get; set; }
         public string ResponsavelCpf { get; set; }
         public string ResponsavelCargo { get; set; }
-        public string TipoEntidade { get; set; }
+        public int EntidadeTiposId { get; set; }
+        public virtual EntidadeTipos EntidadeTipos { get; set; }
         public DateTime DataFundacao { get; set; }
         public string OutrasExperienciasHabitacao { get; set; }
         public string FiliacaoMovimentoNacional { get; set; }
@@ -38,5 +39,7 @@ namespace GrupoPlennus.Domain.Entities
         public virtual EntidadeMaster EntiadeMaster { get; set; }
         public virtual IEnumerable<Pessoa> Pessoas { get; set; }
         public DateTime  DataCadastro { get; set; }
+
+       
     }
 }
