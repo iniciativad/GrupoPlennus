@@ -38,6 +38,9 @@
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'PlennusDebug|AnyCPU'">
+    <OutputPath>bin\PlennusDebug\</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -48,34 +51,89 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\AplicacoesForaCaixa.cs" />
+    <Compile Include="Entities\Atividade.cs" />
     <Compile Include="Entities\Conjuge.cs" />
     <Compile Include="Entities\Dependente.cs" />
+    <Compile Include="Entities\DocumentosComplementares.cs" />
     <Compile Include="Entities\Entidade.cs" />
     <Compile Include="Entities\EntidadeMaster.cs" />
     <Compile Include="Entities\EntidadeTipos.cs" />
+    <Compile Include="Entities\EstadoCivil.cs" />
+    <Compile Include="Entities\GrauInstrucao.cs" />
+    <Compile Include="Entities\Nacionalidade.cs" />
     <Compile Include="Entities\Pessoa.cs" />
+    <Compile Include="Entities\ResidenciaAtual.cs" />
+    <Compile Include="Entities\Sexo.cs" />
+    <Compile Include="Entities\TipoImovel.cs" />
+    <Compile Include="Entities\TipoVeiculo.cs" />
+    <Compile Include="Entities\Naturalidade.cs" />
+    <Compile Include="Interfaces\IAplicacoesForaCaixaRepository.cs" />
+    <Compile Include="Interfaces\IAtividadeRepository.cs" />
     <Compile Include="Interfaces\IConjugeRepository.cs" />
     <Compile Include="Interfaces\IDependenteRepository.cs" />
+    <Compile Include="Interfaces\IDocumentosComplementaresRepository.cs" />
     <Compile Include="Interfaces\IEntidadeMasterRepository.cs" />
     <Compile Include="Interfaces\IEntidadeRepository.cs" />
     <Compile Include="Interfaces\IEntidadeTiposRepository.cs" />
+    <Compile Include="Interfaces\IEstadoCivilRepository.cs" />
+    <Compile Include="Interfaces\IGrauInstrucaoRepository.cs" />
+    <Compile Include="Interfaces\INacionalidadeRepository.cs" />
+    <Compile Include="Interfaces\INaturalidadeRepository.cs" />
     <Compile Include="Interfaces\IPessoaRepository.cs" />
     <Compile Include="Interfaces\IRepositoryBase.cs" />
+    <Compile Include="Interfaces\IResidenciaAtualRepository.cs" />
+    <Compile Include="Interfaces\ISexoRepository.cs" />
+    <Compile Include="Interfaces\ITipoImovelRepository.cs" />
+    <Compile Include="Interfaces\ITipoVeiculoRepository.cs" />
+    <Compile Include="Interfaces\Services\IAplicacoesForaCaixaService.cs" />
+    <Compile Include="Interfaces\Services\IAtividadeService.cs" />
     <Compile Include="Interfaces\Services\IConjugeService.cs" />
     <Compile Include="Interfaces\Services\IDependenteService.cs" />
+    <Compile Include="Interfaces\Services\IDocumentosComplementaresService.cs" />
     <Compile Include="Interfaces\Services\IEntidadeMasterService.cs" />
     <Compile Include="Interfaces\Services\IEntidadeService.cs" />
     <Compile Include="Interfaces\Services\IEntidadeTiposService.cs" />
+    <Compile Include="Interfaces\Services\IEstadoCivilService.cs" />
+    <Compile Include="Interfaces\Services\IGrauInstrucaoService.cs" />
+    <Compile Include="Interfaces\Services\INacionalidadeService.cs" />
+    <Compile Include="Interfaces\Services\INaturalidadeRepository.cs" />
     <Compile Include="Interfaces\Services\IPessoaService.cs" />
+    <Compile Include="Interfaces\Services\IResidenciaAtualService.cs" />
     <Compile Include="Interfaces\Services\IServiceBase.cs" />
+    <Compile Include="Interfaces\Services\ISexoService.cs" />
+    <Compile Include="Interfaces\Services\ITipoImovelService.cs" />
+    <Compile Include="Interfaces\Services\ITipoVeiculoService.cs" />
+    <Compile Include="Listas\AplicacoesForaCaixa.cs" />
+    <Compile Include="Listas\Atividade.cs" />
+    <Compile Include="Listas\DocumentosComplementares.cs" />
+    <Compile Include="Listas\EstadoCivil.cs" />
+    <Compile Include="Listas\GrauInstrucao.cs" />
+    <Compile Include="Listas\Nacionalidade.cs" />
+    <Compile Include="Listas\ResidenciaAtual.cs" />
+    <Compile Include="Listas\Sexo.cs" />
+    <Compile Include="Listas\TipoImovel.cs" />
+    <Compile Include="Listas\TipoVeiculo.cs" />
+    <Compile Include="Listas\Uf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AplicacoesForaCaixaService.cs" />
+    <Compile Include="Services\AtividadeService.cs" />
     <Compile Include="Services\ConjugeService.cs" />
     <Compile Include="Services\DependenteService.cs" />
+    <Compile Include="Services\DocumentosComplementaresService.cs" />
     <Compile Include="Services\EntidadeMasterService.cs" />
     <Compile Include="Services\EntidadeService.cs" />
     <Compile Include="Services\EntidadeTiposService.cs" />
+    <Compile Include="Services\EstadoCivilService.cs" />
+    <Compile Include="Services\GrauInstrucaoService.cs" />
+    <Compile Include="Services\NacionalidadeService.cs" />
+    <Compile Include="Services\NaturalidadeService.cs" />
     <Compile Include="Services\PessoaService.cs" />
+    <Compile Include="Services\ResidenciaAtualService.cs" />
     <Compile Include="Services\ServiceBase.cs" />
+    <Compile Include="Services\SexoService.cs" />
+    <Compile Include="Services\TipoImovelService.cs" />
+    <Compile Include="Services\TipoVeiculoService.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -25,8 +25,8 @@ namespace GrupoPlennus.Domain.Entities
         public int EstadoCivilId { get; set; }
         public string Profissao { get; set; }
         public int AtividadeId { get; set; }
-        public int TempoTrabalhoAtividadeAnos { get; set; }
-        public int TempoTrabalhoAtividadeMeses { get; set; }
+        public int? TempoTrabalhoAtividadeAnos { get; set; }
+        public int? TempoTrabalhoAtividadeMeses { get; set; }
         public string LocalOndeExerceAtividade { get; set; }
         public string BancoAgencia { get; set; }
         public string BancoOperacao { get; set; }
@@ -38,7 +38,7 @@ namespace GrupoPlennus.Domain.Entities
         public int GrauInstrucaoId { get; set; }
         public string Cep { get; set; }
         public string Logradouro { get; set; }
-        public int Numero { get; set; }
+        public int? Numero { get; set; }
         public string Complemento { get; set; }
         public string Bairro { get; set; }
         public string Cidade { get; set; }
@@ -59,6 +59,6 @@ namespace GrupoPlennus.Domain.Entities
        
         public int PessoaId { get; set; }
         public virtual Pessoa Pessoa { get; set; }
-        public DateTime DataCadastro { get; set; }
+        public DateTime? DataCadastro { get; set; }
     }
 }

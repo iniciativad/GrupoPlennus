@@ -185,6 +185,7 @@
     <Compile Include="Controllers\EntidadeMasterController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PessoaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -193,12 +194,23 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\AplicacoesForaCaixaViewModel.cs" />
+    <Compile Include="ViewModels\AtividadeViewModel.cs" />
     <Compile Include="ViewModels\ConjugeViewModel.cs" />
     <Compile Include="ViewModels\DependenteViewModel.cs" />
+    <Compile Include="ViewModels\DocumentosComplementaresViewModel.cs" />
     <Compile Include="ViewModels\EntidadeMasterViewModel.cs" />
     <Compile Include="ViewModels\EntidadeTiposViewModel.cs" />
     <Compile Include="ViewModels\EntidadeViewModel.cs" />
+    <Compile Include="ViewModels\EstadoCivilViewModel.cs" />
+    <Compile Include="ViewModels\GrauInstrucaoViewModel.cs" />
+    <Compile Include="ViewModels\NacionalidadeViewModel.cs" />
+    <Compile Include="ViewModels\NaturalidadeViewModel.cs" />
     <Compile Include="ViewModels\PessoaViewModel.cs" />
+    <Compile Include="ViewModels\ResidenciaAtualViewModel.cs" />
+    <Compile Include="ViewModels\SexoViewModel.cs" />
+    <Compile Include="ViewModels\TipoImovelViewModel.cs" />
+    <Compile Include="ViewModels\TipoVeiculoViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -266,6 +278,10 @@
     <Content Include="Views\Entidade\Create.cshtml" />
     <Content Include="Views\Entidade\Edit.cshtml" />
     <Content Include="Views\Entidade\Delete.cshtml" />
+    <Content Include="Views\Pessoa\Index.cshtml" />
+    <Content Include="Views\Pessoa\Create.cshtml" />
+    <Content Include="Views\Pessoa\Details.cshtml" />
+    <Content Include="Views\Pessoa\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -303,6 +319,9 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'PlennusDebug|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />

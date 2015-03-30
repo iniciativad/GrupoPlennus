@@ -38,6 +38,9 @@
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'PlennusDebug|AnyCPU'">
+    <OutputPath>bin\PlennusDebug\</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework">
       <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
@@ -63,13 +66,24 @@
     <Compile Include="EntityConfig\PessoaConfig.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\AplicacoesForaCaixaRepository.cs" />
+    <Compile Include="Repositories\AtividadeRepository.cs" />
     <Compile Include="Repositories\ConjugeRepository.cs" />
     <Compile Include="Repositories\DependenteRepository.cs" />
+    <Compile Include="Repositories\DocumentosComplementaresRepository.cs" />
     <Compile Include="Repositories\EntidadeMasterRepository.cs" />
     <Compile Include="Repositories\EntidadeRepository.cs" />
     <Compile Include="Repositories\EntidadeTiposRepository.cs" />
+    <Compile Include="Repositories\EstadoCivilRepository.cs" />
+    <Compile Include="Repositories\GrauInstrucaoRepository.cs" />
+    <Compile Include="Repositories\NacionalidadeRepository.cs" />
+    <Compile Include="Repositories\NaturalidadeRepository.cs" />
     <Compile Include="Repositories\PessoaRepository.cs" />
     <Compile Include="Repositories\RepositoryBase.cs" />
+    <Compile Include="Repositories\ResidencicaAtualRepository.cs" />
+    <Compile Include="Repositories\SexoRepository.cs" />
+    <Compile Include="Repositories\TipoImovelRepository.cs" />
+    <Compile Include="Repositories\TipoVeiculoRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GrupoPlennus.Domain\GrupoPlennus.Domain.csproj">

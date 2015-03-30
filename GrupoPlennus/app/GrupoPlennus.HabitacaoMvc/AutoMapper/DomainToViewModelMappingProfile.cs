@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using GrupoPlennus.Domain.Entities;
+
 using GrupoPlennus.HabitacaoMvc.ViewModels;
 
 namespace GrupoPlennus.HabitacaoMvc.AutoMapper
@@ -18,10 +19,22 @@ namespace GrupoPlennus.HabitacaoMvc.AutoMapper
             Mapper.CreateMap<DependenteViewModel, Dependente>();
             Mapper.CreateMap<EntidadeViewModel, Entidade>();
             Mapper.CreateMap<EntidadeTiposViewModel, EntidadeTipos>();
-            Mapper.CreateMap<EntidadeMasterViewModel, EntidadeMaster>();            
+            Mapper.CreateMap<EntidadeMasterViewModel, EntidadeMaster>();
+            Mapper.CreateMap<SexoViewModel, Sexo>();
             Mapper.CreateMap<PessoaViewModel, Pessoa>();
-           
-           
+
+            Mapper.CreateMap<AplicacoesForaCaixaViewModel, AplicacoesForaCaixa>();
+            Mapper.CreateMap <AtividadeViewModel, Atividade> ();
+            Mapper.CreateMap <DocumentosComplementaresViewModel, DocumentosComplementares> ();
+            Mapper.CreateMap <EstadoCivilViewModel, EstadoCivil> ();
+            Mapper.CreateMap <GrauInstrucaoViewModel, GrauInstrucao> ();
+            Mapper.CreateMap <NacionalidadeViewModel, Nacionalidade> ();
+            Mapper.CreateMap <NaturalidadeViewModel, Naturalidade> ();
+            Mapper.CreateMap <ResidenciaAtualViewModel, ResidenciaAtual> ();
+            Mapper.CreateMap <TipoImovelViewModel, TipoImovel> ();
+            Mapper.CreateMap <TipoVeiculoViewModel, TipoVeiculo> ();
+
+
         }
     }
 }

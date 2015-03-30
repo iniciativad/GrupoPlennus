@@ -12,7 +12,7 @@ namespace GrupoPlennus.Data.Contexts
         public PlennusContext()
             :base("PlennusAC")
         {
-
+            
         }
 
         public DbSet<Conjuge> Conjuge { get; set; }
@@ -21,6 +21,18 @@ namespace GrupoPlennus.Data.Contexts
         public DbSet<EntidadeMaster> EntidadeMaster { get; set; }
         public DbSet<Pessoa> Pessoa { get; set; }
         public DbSet<EntidadeTipos> EntidadeTipos { get; set; }
+        public DbSet<Sexo> Sexo { get; set; }
+
+        public DbSet<AplicacoesForaCaixa> AplicacoesForaCaixa { get; set; }
+        public DbSet<Atividade> Atividade { get; set; }
+        public DbSet<DocumentosComplementares> DocumentosComplementares { get; set; }
+        public DbSet<EstadoCivil> EstadoCivil { get; set; }
+        public DbSet<GrauInstrucao> GrauInstrucao { get; set; }
+        public DbSet<Nacionalidade> Nacionalidade { get; set; }
+        public DbSet<Naturalidade> Naturalidade { get; set; }
+        public DbSet<ResidenciaAtual> ResidenciaAtual { get; set; }
+        public DbSet<TipoImovel> TipoImovel { get; set; }
+        public DbSet<TipoVeiculo> TipoVeiculo { get; set; }
 
 
 
