@@ -352,18 +352,18 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.RendaComprovada, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.FaixaSalariaId, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.RendaComprovada, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.RendaComprovada, "", new { @class = "text-danger" })
+                @Html.DropDownList("FaixaSalarialId", String.Empty)
+                @Html.ValidationMessageFor(model => model.FaixaSalariaId, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.RendaNaoComprovada, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.RendaId, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.RendaNaoComprovada, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.RendaNaoComprovada, "", new { @class = "text-danger" })
+                @Html.DropDownList("RendaId", String.Empty)
+                @Html.ValidationMessageFor(model => model.RendaId, "", new { @class = "text-danger" })
             </div>
         </div>
 

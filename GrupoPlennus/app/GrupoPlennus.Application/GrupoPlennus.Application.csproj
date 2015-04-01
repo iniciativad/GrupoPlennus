@@ -61,6 +61,7 @@
     <Compile Include="EntidadeMasterAppService.cs" />
     <Compile Include="EntidadeTiposAppService.cs" />
     <Compile Include="EstadoCivilAppService.cs" />
+    <Compile Include="FaixaSalarialAppService.cs" />
     <Compile Include="GrauInstrucaoAppService.cs" />
     <Compile Include="Interfaces\IAplicacoesForaCaixaAppService.cs" />
     <Compile Include="Interfaces\IAppServiceBase.cs" />
@@ -72,10 +73,12 @@
     <Compile Include="Interfaces\IEntidadeMasterAppService.cs" />
     <Compile Include="Interfaces\IEntidadeTiposAppService.cs" />
     <Compile Include="Interfaces\IEstadoCivilAppService.cs" />
+    <Compile Include="Interfaces\IFaixaSalarialAppService.cs" />
     <Compile Include="Interfaces\IGrauInstrucaoAppService.cs" />
     <Compile Include="Interfaces\INacionalidadeAppService.cs" />
     <Compile Include="Interfaces\INaturalidadeAppService.cs" />
     <Compile Include="Interfaces\IPessoaAppService.cs" />
+    <Compile Include="Interfaces\IRendaAppService.cs" />
     <Compile Include="Interfaces\IResidenciaAtualAppService.cs" />
     <Compile Include="Interfaces\ISexoAppService.cs" />
     <Compile Include="Interfaces\ITipoImovelAppService.cs" />
@@ -84,6 +87,7 @@
     <Compile Include="NaturalidadeAppService.cs" />
     <Compile Include="PessoaAppService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RendaAppService.cs" />
     <Compile Include="ResidenciaAtualAppService.cs" />
     <Compile Include="SexoAppService.cs" />
     <Compile Include="TipoImovelAppService.cs" />

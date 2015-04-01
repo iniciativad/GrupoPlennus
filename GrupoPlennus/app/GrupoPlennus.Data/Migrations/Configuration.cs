@@ -101,7 +101,7 @@ namespace GrupoPlennus.Data.Migrations
                 );
 
             context.ResidenciaAtual.AddOrUpdate(
-                p =>p.Id,
+                p => p.Id,
                 new ResidenciaAtual { Id = 1, Descricao = "Alugada" },
                 new ResidenciaAtual { Id = 2, Descricao = "Mora com parentes/pais" },
                 new ResidenciaAtual { Id = 3, Descricao = "Outros" },
@@ -119,7 +119,7 @@ namespace GrupoPlennus.Data.Migrations
                 );
 
             context.TipoImovel.AddOrUpdate(
-                p=> p.Id,
+                p => p.Id,
                 new TipoImovel { Id = 1, Descricao = "Casa" },
                 new TipoImovel { Id = 2, Descricao = "Terreno" },
                 new TipoImovel { Id = 3, Descricao = "Lote" },
@@ -132,7 +132,7 @@ namespace GrupoPlennus.Data.Migrations
                 );
 
             context.TipoVeiculo.AddOrUpdate(
-                p=> p.Id,
+                p => p.Id,
                 new TipoVeiculo { Id = 1, Descricao = "Carro" },
                 new TipoVeiculo { Id = 2, Descricao = "Ônibus" },
                 new TipoVeiculo { Id = 3, Descricao = "Motocicleta" },
@@ -144,7 +144,7 @@ namespace GrupoPlennus.Data.Migrations
                 );
 
             context.Naturalidade.AddOrUpdate(
-                p=> p.Id,
+                p => p.Id,
                 new Naturalidade { Id = 1, Descricao = "AC" },
                 new Naturalidade { Id = 2, Descricao = "AL" },
                 new Naturalidade { Id = 3, Descricao = "AM" },
@@ -172,6 +172,60 @@ namespace GrupoPlennus.Data.Migrations
                 new Naturalidade { Id = 25, Descricao = "SP" },
                 new Naturalidade { Id = 26, Descricao = "SE" },
                 new Naturalidade { Id = 27, Descricao = "TO" }
+                );
+
+            context.EntidadeTipos.AddOrUpdate(
+                p => p.Id,
+                new EntidadeTipos { Id = 1, Descricao = "ASSOCIAÇÃO" },
+                new EntidadeTipos { Id = 2, Descricao = "COOPERATIVA" },
+                new EntidadeTipos { Id = 3, Descricao = "FEDERAÇÃO" },
+                new EntidadeTipos { Id = 4, Descricao = "SINDICATO" }
+                );
+
+            context.FaixaSalarial.AddOrUpdate(
+                p => p.Id,
+                new FaixaSalarial { Id = 1, Descricao = "Abaixo de 1 Sal." },
+                new FaixaSalarial { Id = 2, Descricao = "1 a 03 Sal." },
+                new FaixaSalarial { Id = 3, Descricao = "03 a 05 Sal." },
+                new FaixaSalarial { Id = 4, Descricao = "05 a 10 Sal." },
+                new FaixaSalarial { Id = 5, Descricao = "Acima de 10 Sal." }
+                );
+
+
+            context.Renda.AddOrUpdate(
+                p => p.Id,
+                new Renda { Id = 1, Descricao = "R$ 50,00 a R$ 100,00" },
+                new Renda { Id = 2, Descricao = "R$ 100,00 a R$ 200,00" },
+                new Renda { Id = 3, Descricao = "R$ 200,00 a R$ 300,00" },
+                new Renda { Id = 4, Descricao = "R$ 300,00 a R$ 400,00" },
+                new Renda { Id = 5, Descricao = "R$ 400,00 a R$ 500,00" },
+                new Renda { Id = 6, Descricao = "R$ 500,00 a R$ 600,00" },
+                new Renda { Id = 7, Descricao = "R$ 600,00 a R$ 700,00" },
+                new Renda { Id = 8, Descricao = "R$ 700,00 a R$ 800,00" },
+                new Renda { Id = 9, Descricao = "R$ 800,00 a R$ 900,00" },
+                new Renda { Id = 10, Descricao = "R$ 900,00 a R$ 1000,00" },
+                new Renda { Id = 11, Descricao = "R$ 1000,00 a R$ 1100,00" },
+                new Renda { Id = 12, Descricao = "R$ 1100,00 a R$ 1200,00" },
+                new Renda { Id = 13, Descricao = "R$ 1200,00 a R$ 1300,00" },
+                new Renda { Id = 14, Descricao = "R$ 1300,00 a R$ 1400,00" },
+                new Renda { Id = 15, Descricao = "R$ 1400,00 a R$ 1500,00" },
+                new Renda { Id = 16, Descricao = "R$ 1500,00 a R$ 1600,00" },
+               new Renda { Id = 17, Descricao = "R$ 1600,00 a R$ 1700,00" },
+               new Renda { Id = 18, Descricao = "R$ 1700,00 a R$ 1800,00" },
+               new Renda { Id = 19, Descricao = "R$ 1800,00 a R$ 1900,00" },
+               new Renda { Id = 20, Descricao = "R$ 1900,00 a R$ 2000,00" },
+               new Renda { Id = 21, Descricao = "R$ 2000,00 a R$ 2100,00" },
+               new Renda { Id = 22, Descricao = "R$ 2100,00 a R$ 2200,00" },
+               new Renda { Id = 23, Descricao = "R$ 2200,00 a R$ 2300,00" },
+               new Renda { Id = 24, Descricao = "R$ 2300,00 a R$ 2400,00" },
+               new Renda { Id = 25, Descricao = "R$ 2400,00 a R$ 2500,00" },
+               new Renda { Id = 26, Descricao = "R$ 2500,00 a R$ 2600,00" },
+               new Renda { Id = 27, Descricao = "R$ 2600,00 a R$ 2700,00" },
+               new Renda { Id = 28, Descricao = "R$ 2700,00 a R$ 2800,00" },
+               new Renda { Id = 29, Descricao = "R$ 2800,00 a R$ 2900,00" },
+               new Renda { Id = 30, Descricao = "R$ 2900,00 a R$ 3000,00" },
+               new Renda { Id = 31, Descricao = "Acima de R$ 3000,00" }
+
                 );
         }
     }

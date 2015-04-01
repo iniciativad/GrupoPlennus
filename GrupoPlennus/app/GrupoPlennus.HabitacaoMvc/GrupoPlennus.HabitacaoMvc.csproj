@@ -181,6 +181,7 @@
     <Compile Include="AutoMapper\DomainToViewModelMappingProfile.cs" />
     <Compile Include="AutoMapper\ViewModelToDomainMappingProfile.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DependenteController.cs" />
     <Compile Include="Controllers\EntidadeController.cs" />
     <Compile Include="Controllers\EntidadeMasterController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -203,10 +204,12 @@
     <Compile Include="ViewModels\EntidadeTiposViewModel.cs" />
     <Compile Include="ViewModels\EntidadeViewModel.cs" />
     <Compile Include="ViewModels\EstadoCivilViewModel.cs" />
+    <Compile Include="ViewModels\FaixaSalarialViewModel.cs" />
     <Compile Include="ViewModels\GrauInstrucaoViewModel.cs" />
     <Compile Include="ViewModels\NacionalidadeViewModel.cs" />
     <Compile Include="ViewModels\NaturalidadeViewModel.cs" />
     <Compile Include="ViewModels\PessoaViewModel.cs" />
+    <Compile Include="ViewModels\RendaViewModel.cs" />
     <Compile Include="ViewModels\ResidenciaAtualViewModel.cs" />
     <Compile Include="ViewModels\SexoViewModel.cs" />
     <Compile Include="ViewModels\TipoImovelViewModel.cs" />
@@ -282,6 +285,12 @@
     <Content Include="Views\Pessoa\Create.cshtml" />
     <Content Include="Views\Pessoa\Details.cshtml" />
     <Content Include="Views\Pessoa\Edit.cshtml" />
+    <Content Include="Views\Pessoa\Dependente.cshtml" />
+    <Content Include="Views\Pessoa\DepententeCreate.cshtml" />
+    <Content Include="Views\Dependente\Index.cshtml" />
+    <Content Include="Views\Dependente\Create.cshtml" />
+    <Content Include="Views\Dependente\Edit.cshtml" />
+    <Content Include="Views\Dependente\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

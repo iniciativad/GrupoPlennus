@@ -78,6 +78,7 @@ namespace GrupoPlennus.HabitacaoMvc.App_Start
             kernel.Bind<IEntidadeTiposAppService>().To<EntidadeTiposAppService>();
             kernel.Bind<ISexoAppService>().To<SexoAppService>();
             kernel.Bind<IAplicacoesForaCaixaAppService>().To<AplicacoesForaCaixaAppService>();
+            kernel.Bind<IAtividadeAppService>().To<AtividadeAppService>();
             kernel.Bind<IDocumentosComplementaresAppService>().To<DocumentosComplementaresAppService>();
             kernel.Bind<IEstadoCivilAppService>().To<EstadoCivilAppService>();
             kernel.Bind<IGrauInstrucaoAppService>().To<GrauInstrucaoAppService>();
@@ -86,6 +87,7 @@ namespace GrupoPlennus.HabitacaoMvc.App_Start
             kernel.Bind<IResidenciaAtualAppService>().To<ResidenciaAtualAppService>();
             kernel.Bind<ITipoImovelAppService>().To<TipoImovelAppService>();
             kernel.Bind<ITipoVeiculoAppService>().To<TipoVeiculoAppService>();
+            kernel.Bind<IFaixaSalarialAppService>().To<FaixaSalarialAppService>();
 
 
             //services
@@ -98,6 +100,7 @@ namespace GrupoPlennus.HabitacaoMvc.App_Start
             kernel.Bind<IEntidadeTiposService>().To<EntidadeTiposService>();
             kernel.Bind<ISexoService>().To<SexoService>();
             kernel.Bind<IAplicacoesForaCaixaService>().To<AplicacoesForaCaixaService>();
+            kernel.Bind<IAtividadeService>().To<AtividadeService>();
             kernel.Bind<IDocumentosComplementaresService>().To<DocumentosComplementaresService>();
             kernel.Bind<IEstadoCivilService>().To<EstadoCivilService>();
             kernel.Bind<IGrauInstrucaoService>().To<GrauInstrucaoService>();
@@ -106,6 +109,7 @@ namespace GrupoPlennus.HabitacaoMvc.App_Start
             kernel.Bind<IResidenciaAtualService>().To<ResidenciaAtualService>();
             kernel.Bind<ITipoImovelService>().To<TipoImovelService>();
             kernel.Bind<ITipoVeiculoService>().To<TipoVeiculoService>();
+            kernel.Bind<IFaixaSalarialService>().To<FaixaSalarialService>();
 
 
             //repositories
@@ -118,6 +122,7 @@ namespace GrupoPlennus.HabitacaoMvc.App_Start
             kernel.Bind<IEntidadeTiposRepository>().To<EntidadeTiposRepository>();
             kernel.Bind<ISexoRepository>().To<SexoRepository>();
             kernel.Bind<IAplicacoesForaCaixaRepository>().To<AplicacoesForaCaixaRepository>();
+            kernel.Bind<IAtividadeRepository>().To<AtividadeRepository>();
             kernel.Bind<IDocumentosComplementaresRepository>().To<DocumentosComplementaresRepository>();
             kernel.Bind<IEstadoCivilRepository>().To<EstadoCivilRepository>();
             kernel.Bind<IGrauInstrucaoRepository>().To<GrauInstrucaoRepository>();
@@ -126,6 +131,7 @@ namespace GrupoPlennus.HabitacaoMvc.App_Start
             kernel.Bind<IResidenciaAtualRepository>().To<ResidencicaAtualRepository>();
             kernel.Bind<ITipoImovelRepository>().To<TipoImovelRepository>();
             kernel.Bind<ITipoVeiculoRepository>().To<TipoVeiculoRepository>();
+            kernel.Bind<IFaixaSalarialRepository>().To<FaixaSalarialRepository>();
         }
     }
 }

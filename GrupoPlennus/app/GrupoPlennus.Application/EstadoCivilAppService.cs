@@ -10,7 +10,7 @@ namespace GrupoPlennus.Application
         public EstadoCivilAppService(IEstadoCivilService estadoCivilservice)
             :base(estadoCivilservice)
         {
-
+            _estadoCivilservice = estadoCivilservice;
         }
     }
 }

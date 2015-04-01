@@ -1,0 +1,90 @@
+﻿@model GrupoPlennus.HabitacaoMvc.ViewModels.DependenteViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DependenteViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataNascimento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataNascimento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SexoId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sexo.Descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cpf)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cpf)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nis)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GrauInstrucaoId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GrauInstrucao.Descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RendaComprovada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RendaComprovada)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RendaNaoComprovada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RendaNaoComprovada)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Deficiente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Deficiente)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

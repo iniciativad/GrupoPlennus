@@ -24,14 +24,16 @@ namespace GrupoPlennus.HabitacaoMvc.AutoMapper
             Mapper.CreateMap<Sexo, SexoViewModel>();
 
             Mapper.CreateMap <AplicacoesForaCaixa, AplicacoesForaCaixaViewModel> ();
+            Mapper.CreateMap<Atividade, AtividadeViewModel>();
             Mapper.CreateMap <DocumentosComplementares, DocumentosComplementaresViewModel> ();
             Mapper.CreateMap <EstadoCivil, EstadoCivilViewModel> ();
             Mapper.CreateMap <GrauInstrucao, GrauInstrucaoViewModel> ();
             Mapper.CreateMap <Nacionalidade, NacionalidadeViewModel> ();
             Mapper.CreateMap <Naturalidade, NaturalidadeViewModel> ();
             Mapper.CreateMap <ResidenciaAtual, ResidenciaAtualViewModel> ();
-            Mapper.CreateMap <TipoImovel, TipoImovel> ();
+            Mapper.CreateMap <TipoImovel, TipoImovelViewModel> ();
             Mapper.CreateMap <TipoVeiculo, TipoVeiculoViewModel> ();
+            Mapper.CreateMap<FaixaSalarial, FaixaSalarialViewModel>();
 
         }
     }

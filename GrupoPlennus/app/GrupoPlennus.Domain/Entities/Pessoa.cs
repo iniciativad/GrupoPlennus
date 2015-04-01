@@ -30,8 +30,8 @@ namespace GrupoPlennus.Domain.Entities
         public string Profissao { get; set; }    
         public int AtividadeId { get; set; }
         public virtual Atividade Atividade { get; set; }
-        public int TempoTrabalhoAtividadeAnos { get; set; }       
-        public int TempoTrabalhoAtividadeMeses { get; set; }       
+        public int? TempoTrabalhoAtividadeAnos { get; set; }       
+        public int? TempoTrabalhoAtividadeMeses { get; set; }       
         public string LocalOndeExerceAtividade { get; set; }       
         public string BancoAgencia { get; set; }      
         public string BancoOperacao { get; set; }       
@@ -55,13 +55,12 @@ namespace GrupoPlennus.Domain.Entities
         public string Email { get; set; }
         public int ResidenciaAtualId { get; set; }
         public virtual ResidenciaAtual ResidenciaAtual { get; set; }
-        public decimal? RendaComprovada { get; set; }
-        public decimal? RendaNaoComprovada { get; set; }       
+            
         public int? UltimoEmpregoAnos { get; set; }       
         public int? UltimoEmpregoMes { get; set; }      
         public int? UltimoEmpregoAnoDesligamento { get; set; }       
         public string CargoFuncao { get; set; }        
-        public int? DocumentosComplementaresId { get; set; }
+        public int DocumentosComplementaresId { get; set; }
         public virtual DocumentosComplementares DocumentosComplementares { get; set; }
         public bool PossuiImoveis { get; set; }
         public int TipoImovelId { get; set; }
@@ -84,6 +83,11 @@ namespace GrupoPlennus.Domain.Entities
         public virtual IEnumerable<Dependente> Dependentes { get; set; }
         public virtual IEnumerable<Conjuge> Conjuge { get; set; }
         public DateTime? DataCadastro { get; set; }
+
+        public int FaixaSalarialId { get; set; }
+        public virtual FaixaSalarial FaixaSalarial { get; set; }
+        public int RendaId { get; set; }
+        public virtual Renda Renda { get; set; }
 
     }
 }

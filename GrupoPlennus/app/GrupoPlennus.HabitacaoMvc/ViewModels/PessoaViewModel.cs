@@ -55,9 +55,9 @@ namespace GrupoPlennus.HabitacaoMvc.ViewModels
         public int AtividadeId { get; set; }
         public virtual AtividadeViewModel Atividade { get; set; }
         [Display(Name = "Tempo de trabalho na atividade atual - Anos")]
-        public int TempoTrabalhoAtividadeAnos { get; set; }
+        public int? TempoTrabalhoAtividadeAnos { get; set; }
         [Display(Name = "Tempo de trabalho na atividade atual - Meses")]
-        public int TempoTrabalhoAtividadeMeses { get; set; }
+        public int? TempoTrabalhoAtividadeMeses { get; set; }
         [Display(Name = "Local de trabalho atividade atual")]
         public string LocalOndeExerceAtividade { get; set; }
         [Display(Name = "Banco - Agência")]
@@ -94,10 +94,7 @@ namespace GrupoPlennus.HabitacaoMvc.ViewModels
         [Display(Name = "Situação da residência atual")]
         public int ResidenciaAtualId { get; set; }
         public virtual ResidenciaAtualViewModel ResidenciaAtual { get; set; }
-        [Display(Name = "Valor da renda comprovada")]
-        public decimal? RendaComprovada { get; set; }
-        [Display(Name = "Valor da renda não comprovada")]
-        public decimal? RendaNaoComprovada { get; set; }
+       
         [Display(Name = "Ultimo emprego - Anos")]
         public int? UltimoEmpregoAnos { get; set; }
         [Display(Name = "Ultimo emprego - Meses")]
@@ -145,5 +142,10 @@ namespace GrupoPlennus.HabitacaoMvc.ViewModels
         public virtual IEnumerable<ConjugeViewModel> Conjuge { get; set; }
         [ScaffoldColumn(false)]
         public DateTime? DataCadastro { get; set; }
+
+        public int FaixaSalariaId { get; set; }
+        public virtual FaixaSalarialViewModel FaixaSalarial { get; set; }
+        public int RendaId { get; set; }
+        public virtual RendaViewModel Renda { get; set; }
     }
 }

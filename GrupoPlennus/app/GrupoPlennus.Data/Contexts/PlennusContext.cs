@@ -3,6 +3,7 @@ using GrupoPlennus.Domain.Entities;
 using System;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
+using System.Data.Entity.Validation;
 using System.Linq;
 
 namespace GrupoPlennus.Data.Contexts
@@ -10,9 +11,9 @@ namespace GrupoPlennus.Data.Contexts
     public class PlennusContext : DbContext
     {
         public PlennusContext()
-            :base("PlennusAC")
+            : base("PlennusAC")
         {
-            
+
         }
 
         public DbSet<Conjuge> Conjuge { get; set; }
@@ -33,6 +34,8 @@ namespace GrupoPlennus.Data.Contexts
         public DbSet<ResidenciaAtual> ResidenciaAtual { get; set; }
         public DbSet<TipoImovel> TipoImovel { get; set; }
         public DbSet<TipoVeiculo> TipoVeiculo { get; set; }
+        public DbSet<FaixaSalarial> FaixaSalarial { get; set; }
+        public DbSet<Renda> Renda { get; set; }
 
 
 
@@ -43,7 +46,7 @@ namespace GrupoPlennus.Data.Contexts
             modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
             modelBuilder.Conventions.Remove<ManyToManyCascadeDeleteConvention>();
 
-           
+
 
             modelBuilder.Properties<string>()
                 .Configure(p => p.HasColumnType("varchar"));
@@ -51,13 +54,13 @@ namespace GrupoPlennus.Data.Contexts
             modelBuilder.Properties<string>()
                 .Configure(p => p.HasMaxLength(75));
 
-           
+
             modelBuilder.Configurations.Add(new ConjugeConfig());
             modelBuilder.Configurations.Add(new DependenteConfig());
             modelBuilder.Configurations.Add(new EntidadeConfig());
             modelBuilder.Configurations.Add(new EntidadeMasterConfig());
             modelBuilder.Configurations.Add(new PessoaConfig());
-            
+
 
         }
 
@@ -74,7 +77,15 @@ namespace GrupoPlennus.Data.Contexts
                     entry.Property("DataCadastro").IsModified = false;
                 }
             }
-            return base.SaveChanges();
+            try
+            {
+                return base.SaveChanges();
+            }
+            catch (DbEntityValidationException e)
+            {
+                var newException = new FormattedDbEntityValidationException(e);
+                throw newException;
+            }
         }
 
     }

@@ -10,7 +10,7 @@ namespace GrupoPlennus.Application
         public AtividadeAppService(IAtividadeService atividadeService)
             :base(atividadeService)
         {
-
+            _atividadeService = atividadeService;
         }
     }
 }

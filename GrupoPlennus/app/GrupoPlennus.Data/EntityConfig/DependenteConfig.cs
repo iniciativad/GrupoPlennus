@@ -12,26 +12,13 @@ namespace GrupoPlennus.Data.EntityConfig
             Property(p => p.Nome).
                 IsRequired();
 
-            Property(p => p.Nis).
-               IsRequired();
-
-            Property(p => p.Email)
-                .HasMaxLength(160);
+           
 
             Property(p => p.Cpf)
-                .HasMaxLength(11)
-                .IsRequired()
+                .HasMaxLength(11)                
                 .HasColumnType("Char");
 
-            Property(p => p.Cep)
-                .HasMaxLength(8)
-                .HasColumnType("Char");
-
-
-
-            Property(p => p.Uf)
-                .HasMaxLength(2)
-                .HasColumnType("Char");
+           
         }
     }
 }

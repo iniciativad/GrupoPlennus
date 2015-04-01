@@ -58,6 +58,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contexts\FormattedDbEntityValidationException.cs" />
     <Compile Include="Contexts\PlennusContext.cs" />
     <Compile Include="EntityConfig\ConjugeConfig.cs" />
     <Compile Include="EntityConfig\DependenteConfig.cs" />
@@ -75,10 +76,12 @@
     <Compile Include="Repositories\EntidadeRepository.cs" />
     <Compile Include="Repositories\EntidadeTiposRepository.cs" />
     <Compile Include="Repositories\EstadoCivilRepository.cs" />
+    <Compile Include="Repositories\FaixaSalarialRepository.cs" />
     <Compile Include="Repositories\GrauInstrucaoRepository.cs" />
     <Compile Include="Repositories\NacionalidadeRepository.cs" />
     <Compile Include="Repositories\NaturalidadeRepository.cs" />
     <Compile Include="Repositories\PessoaRepository.cs" />
+    <Compile Include="Repositories\RendaRepository.cs" />
     <Compile Include="Repositories\RepositoryBase.cs" />
     <Compile Include="Repositories\ResidencicaAtualRepository.cs" />
     <Compile Include="Repositories\SexoRepository.cs" />
