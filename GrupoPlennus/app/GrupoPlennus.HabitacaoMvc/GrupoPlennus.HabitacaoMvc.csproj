@@ -181,6 +181,7 @@
     <Compile Include="AutoMapper\DomainToViewModelMappingProfile.cs" />
     <Compile Include="AutoMapper\ViewModelToDomainMappingProfile.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ConjugeController.cs" />
     <Compile Include="Controllers\DependenteController.cs" />
     <Compile Include="Controllers\EntidadeController.cs" />
     <Compile Include="Controllers\EntidadeMasterController.cs" />
@@ -291,6 +292,10 @@
     <Content Include="Views\Dependente\Create.cshtml" />
     <Content Include="Views\Dependente\Edit.cshtml" />
     <Content Include="Views\Dependente\Details.cshtml" />
+    <Content Include="Views\Conjuge\Index.cshtml" />
+    <Content Include="Views\Conjuge\Details.cshtml" />
+    <Content Include="Views\Conjuge\Create.cshtml" />
+    <Content Include="Views\Conjuge\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,13 +1,14 @@
-﻿@model IEnumerable<GrupoPlennus.HabitacaoMvc.ViewModels.PessoaViewModel>
+﻿@model IEnumerable<GrupoPlennus.HabitacaoMvc.ViewModels.ConjugeViewModel>
 
 @{
     ViewBag.Title = "Index";
+    var PessoaId = TempData["PessoaId"];
 }
 
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Create New", "Create", new { id = PessoaId })
 </p>
 <table class="table">
     <tr>
@@ -19,6 +20,16 @@
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Nis)
+        </th>
+       
+        <th>
+            @Html.DisplayNameFor(model => model.Telefone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Celular)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
         </th>
        
         <th></th>
@@ -35,12 +46,21 @@
         <td>
             @Html.DisplayFor(modelItem => item.Nis)
         </td>
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.Telefone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Celular)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
         
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
             @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Dependente", "Dependente", new { id=item.Id }) |
-            @Html.ActionLink("Conjuge", "Conjuge", new { id = item.Id })
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
         </td>
     </tr>
 }

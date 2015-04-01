@@ -77,7 +77,7 @@ namespace GrupoPlennus.HabitacaoMvc.ViewModels
         public string Cep { get; set; }
         [Display(Name = "Rua/Av.")]
         public string Logradouro { get; set; }
-        public int Numero { get; set; }
+        public int? Numero { get; set; }
         public string Complemento { get; set; }
         public string Bairro { get; set; }
         public string Cidade { get; set; }
@@ -95,12 +95,17 @@ namespace GrupoPlennus.HabitacaoMvc.ViewModels
         public int? UltimoEmpregoAnoDesligamento { get; set; }
         [Display(Name = "Cargo/Função ultimo emprego")]
         public string CargoFuncao { get; set; }
-        
-       
-      
-       
+
+        [Display(Name = "Possui imóvel?")]
+        public int TipoImovelId { get; set; }
+        public virtual TipoImovelViewModel TipoImovel { get; set; }
+        [Display(Name = "Possui veículo?")]
+        public int TipoVeiculoId { get; set; }
+        public virtual TipoVeiculoViewModel TipoVeiculo { get; set; }
+        [ScaffoldColumn(false)]
         public int PessoaId { get; set; }
         public virtual PessoaViewModel Pessoa { get; set; }
+        [ScaffoldColumn(false)]
         public DateTime DataCadastro { get; set; }
 
         public int FaixaSalarialId { get; set; }

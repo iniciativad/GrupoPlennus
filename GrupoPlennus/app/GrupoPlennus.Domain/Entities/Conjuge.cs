@@ -37,7 +37,7 @@ namespace GrupoPlennus.Domain.Entities
         public string BancoConta { get; set; }
         public bool ContaConjuta { get; set; }
         public int NaturalidadeId { get; set; }
-        public virtual Nacionalidade Naturalidade { get; set; }
+        public virtual Naturalidade Naturalidade { get; set; }
         public bool MenorEmancipado { get; set; }
         public bool MenorAssistido { get; set; }
         public int GrauInstrucaoId { get; set; }
@@ -58,8 +58,12 @@ namespace GrupoPlennus.Domain.Entities
         public int? UltimoEmpregoMes { get; set; }
         public int? UltimoEmpregoAnoDesligamento { get; set; }
         public string CargoFuncao { get; set; }
-      
 
+        public int TipoImovelId { get; set; }
+        public virtual TipoImovel TipoImovel { get; set; }
+
+        public int TipoVeiculoId { get; set; }
+        public virtual TipoVeiculo TipoVeiculo { get; set; }
 
         public int PessoaId { get; set; }
         public virtual Pessoa Pessoa { get; set; }
