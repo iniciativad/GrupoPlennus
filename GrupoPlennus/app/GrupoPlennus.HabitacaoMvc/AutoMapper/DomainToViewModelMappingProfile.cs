@@ -34,6 +34,7 @@ namespace GrupoPlennus.HabitacaoMvc.AutoMapper
             Mapper.CreateMap <TipoImovelViewModel, TipoImovel> ();
             Mapper.CreateMap <TipoVeiculoViewModel, TipoVeiculo> ();
             Mapper.CreateMap<FaixaSalarialViewModel, FaixaSalarial>();
+            Mapper.CreateMap<RendaViewModel, Renda>();
 
 
         }

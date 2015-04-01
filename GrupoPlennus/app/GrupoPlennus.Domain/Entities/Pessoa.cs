@@ -62,10 +62,10 @@ namespace GrupoPlennus.Domain.Entities
         public string CargoFuncao { get; set; }        
         public int DocumentosComplementaresId { get; set; }
         public virtual DocumentosComplementares DocumentosComplementares { get; set; }
-        public bool PossuiImoveis { get; set; }
+       
         public int TipoImovelId { get; set; }
         public virtual TipoImovel TipoImovel { get; set; }
-        public bool PossuiVeiculos { get; set; }
+       
         public int TipoVeiculoId { get; set; }
         public virtual TipoVeiculo TipoVeiculo { get; set; }
         public bool CartaoCredito { get; set; }      

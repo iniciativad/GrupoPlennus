@@ -7,7 +7,7 @@
 <h2>Details</h2>
 
 <div>
-    <h4>PessoaViewModel</h4>
+  
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -47,7 +47,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.NacionalidadeId)
+            @Html.DisplayFor(model => model.Nacionalidade.Descricao)
         </dd>
 
         <dt>
@@ -143,7 +143,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.EstadoCivilId)
+            @Html.DisplayFor(model => model.EstadoCivil.Descricao)
         </dd>
 
         <dt>
@@ -159,7 +159,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.AtividadeId)
+            @Html.DisplayFor(model => model.Atividade.Descricao)
         </dd>
 
         <dt>
@@ -223,7 +223,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.NaturalidadeId)
+            @Html.DisplayFor(model => model.Naturalidade.Descricao)
         </dd>
 
         <dt>
@@ -247,7 +247,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.GrauInstrucaoId)
+            @Html.DisplayFor(model => model.GrauInstrucao.Descricao)
         </dd>
 
         <dt>
@@ -335,23 +335,23 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.ResidenciaAtualId)
+            @Html.DisplayFor(model => model.ResidenciaAtual.Descricao)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.RendaComprovada)
+            @Html.DisplayName("Faixa Salarial")
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.RendaComprovada)
+            @Html.DisplayFor(model => model.FaixaSalarial.Descricao)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.RendaNaoComprovada)
+            @Html.DisplayName("Renda")
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.RendaNaoComprovada)
+            @Html.DisplayFor(model => model.Renda.Descricao)
         </dd>
 
         <dt>
@@ -391,39 +391,27 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.DocumentosComplementaresId)
+            @Html.DisplayFor(model => model.DocumentosComplementares.Descricao)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.PossuiImoveis)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.PossuiImoveis)
-        </dd>
+       
 
         <dt>
             @Html.DisplayNameFor(model => model.TipoImovelId)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.TipoImovelId)
+            @Html.DisplayFor(model => model.TipoImovel.Descricao)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.PossuiVeiculos)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.PossuiVeiculos)
-        </dd>
+       
 
         <dt>
             @Html.DisplayNameFor(model => model.TipoVeiculoId)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.TipoVeiculoId)
+            @Html.DisplayFor(model => model.TipoVeiculo.Descricao)
         </dd>
 
         <dt>
@@ -447,7 +435,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.AplicacoesForaCaixaId)
+            @Html.DisplayFor(model => model.AplicacoesForaCaixa.Descricao)
         </dd>
 
         <dt>
@@ -503,7 +491,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.EntidadeId)
+            @Html.DisplayFor(model => model.Entidade.NomeFantasia)
         </dd>
 
     </dl>

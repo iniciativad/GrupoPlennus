@@ -352,10 +352,10 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.FaixaSalariaId, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.FaixaSalarialId, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("FaixaSalarialId", String.Empty)
-                @Html.ValidationMessageFor(model => model.FaixaSalariaId, "", new { @class = "text-danger" })
+                @Html.ValidationMessageFor(model => model.FaixaSalarialId, "", new { @class = "text-danger" })
             </div>
         </div>
 
@@ -407,15 +407,7 @@
             </div>
         </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.PossuiImoveis, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                <div class="checkbox">
-                    @Html.EditorFor(model => model.PossuiImoveis)
-                    @Html.ValidationMessageFor(model => model.PossuiImoveis, "", new { @class = "text-danger" })
-                </div>
-            </div>
-        </div>
+        
 
         <div class="form-group">
             @Html.LabelFor(model => model.TipoImovelId, htmlAttributes: new { @class = "control-label col-md-2" })
@@ -425,15 +417,7 @@
             </div>
         </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.PossuiVeiculos, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                <div class="checkbox">
-                    @Html.EditorFor(model => model.PossuiVeiculos)
-                    @Html.ValidationMessageFor(model => model.PossuiVeiculos, "", new { @class = "text-danger" })
-                </div>
-            </div>
-        </div>
+        
 
         <div class="form-group">
             @Html.LabelFor(model => model.TipoVeiculoId, htmlAttributes: new { @class = "control-label col-md-2" })

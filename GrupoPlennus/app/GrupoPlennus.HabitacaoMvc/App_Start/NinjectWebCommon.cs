@@ -88,6 +88,7 @@ namespace GrupoPlennus.HabitacaoMvc.App_Start
             kernel.Bind<ITipoImovelAppService>().To<TipoImovelAppService>();
             kernel.Bind<ITipoVeiculoAppService>().To<TipoVeiculoAppService>();
             kernel.Bind<IFaixaSalarialAppService>().To<FaixaSalarialAppService>();
+            kernel.Bind<IRendaAppService>().To<RendaAppService>();
 
 
             //services
@@ -110,6 +111,7 @@ namespace GrupoPlennus.HabitacaoMvc.App_Start
             kernel.Bind<ITipoImovelService>().To<TipoImovelService>();
             kernel.Bind<ITipoVeiculoService>().To<TipoVeiculoService>();
             kernel.Bind<IFaixaSalarialService>().To<FaixaSalarialService>();
+            kernel.Bind<IRendaService>().To<RendaService>();
 
 
             //repositories
@@ -132,6 +134,7 @@ namespace GrupoPlennus.HabitacaoMvc.App_Start
             kernel.Bind<ITipoImovelRepository>().To<TipoImovelRepository>();
             kernel.Bind<ITipoVeiculoRepository>().To<TipoVeiculoRepository>();
             kernel.Bind<IFaixaSalarialRepository>().To<FaixaSalarialRepository>();
+            kernel.Bind<IRendaRepository>().To<RendaRepository>();
         }
     }
 }

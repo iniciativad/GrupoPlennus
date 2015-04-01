@@ -128,7 +128,7 @@ namespace GrupoPlennus.Data.Migrations
                 new TipoImovel { Id = 6, Descricao = "Loja" },
                 new TipoImovel { Id = 7, Descricao = "Sala Comercial" },
                 new TipoImovel { Id = 8, Descricao = "Fazenda" },
-                new TipoImovel { Id = 8, Descricao = "Não possui imóvel" }
+                new TipoImovel { Id = 9, Descricao = "Não possui imóvel" }
                 );
 
             context.TipoVeiculo.AddOrUpdate(

@@ -106,14 +106,12 @@ namespace GrupoPlennus.HabitacaoMvc.ViewModels
         [Display(Name = "Documentos complementar")]
         public int DocumentosComplementaresId { get; set; }
         public virtual DocumentosComplementaresViewModel DocumentosComplementares { get; set; }
+       
         [Display(Name = "Possui imóvel?")]
-        public bool PossuiImoveis { get; set; }
-        [Display(Name = "Qual o tipo do imóvel")]
         public int TipoImovelId { get; set; }
         public virtual TipoImovelViewModel TipoImovel { get; set; }
+       
         [Display(Name = "Possui veículo?")]
-        public bool PossuiVeiculos { get; set; }
-        [Display(Name = "Qual tipo de veículo")]
         public int TipoVeiculoId { get; set; }
         public virtual TipoVeiculoViewModel TipoVeiculo { get; set; }
         [Display(Name = "Tem Cartão de crédito?")]
@@ -142,9 +140,10 @@ namespace GrupoPlennus.HabitacaoMvc.ViewModels
         public virtual IEnumerable<ConjugeViewModel> Conjuge { get; set; }
         [ScaffoldColumn(false)]
         public DateTime? DataCadastro { get; set; }
-
-        public int FaixaSalariaId { get; set; }
+        [Display(Name ="Faixa Salarial")]
+        public int FaixaSalarialId { get; set; }
         public virtual FaixaSalarialViewModel FaixaSalarial { get; set; }
+        [Display(Name ="Renda")]
         public int RendaId { get; set; }
         public virtual RendaViewModel Renda { get; set; }
     }

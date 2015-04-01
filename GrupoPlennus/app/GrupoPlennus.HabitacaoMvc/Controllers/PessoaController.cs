@@ -113,8 +113,8 @@ namespace GrupoPlennus.HabitacaoMvc.Controllers
             ViewBag.TipoVeiculoId = new SelectList(_tipoVeiculoApp.GetAll(), "Id", "Descricao", pessoa.TipoVeiculoId);
             ViewBag.AplicacoesForaCaixaId = new SelectList(_aplicacoesForaCaixaApp.GetAll(), "Id", "Descricao", pessoa.AplicacoesForaCaixaId);
             ViewBag.EntidadeId = new SelectList(_entidadeApp.GetAll(), "Id", "NomeFantasia", pessoa.EntidadeId);
-            ViewBag.FaixaSalarialId = new SelectList(_faixaSalarialApp.GetAll(), "Id", "Descricao",pessoa.FaixaSalariaId);
-            ViewBag.RendaId = new SelectList(_rendaApp.GetAll(), "Id", "Descricao",pessoa.FaixaSalariaId);
+            ViewBag.FaixaSalarialId = new SelectList(_faixaSalarialApp.GetAll(), "Id", "Descricao",pessoa.FaixaSalarialId);
+            ViewBag.RendaId = new SelectList(_rendaApp.GetAll(), "Id", "Descricao",pessoa.FaixaSalarialId);
             return View(pessoa);
         }
 
@@ -136,8 +136,8 @@ namespace GrupoPlennus.HabitacaoMvc.Controllers
             ViewBag.TipoVeiculoId = new SelectList(_tipoVeiculoApp.GetAll(), "Id", "Descricao", pessoaViewModel.TipoVeiculoId);
             ViewBag.AplicacoesForaCaixaId = new SelectList(_aplicacoesForaCaixaApp.GetAll(), "Id", "Descricao", pessoaViewModel.AplicacoesForaCaixaId);
             ViewBag.EntidadeId = new SelectList(_entidadeApp.GetAll(), "Id", "NomeFantasia", pessoaViewModel.EntidadeId);
-            ViewBag.FaixaSalarialId = new SelectList(_faixaSalarialApp.GetAll(), "Id", "Descricao", pessoaViewModel.FaixaSalariaId);
-            ViewBag.RendaId = new SelectList(_rendaApp.GetAll(), "Id", "Descricao", pessoaViewModel.FaixaSalariaId);
+            ViewBag.FaixaSalarialId = new SelectList(_faixaSalarialApp.GetAll(), "Id", "Descricao", pessoaViewModel.FaixaSalarialId);
+            ViewBag.RendaId = new SelectList(_rendaApp.GetAll(), "Id", "Descricao", pessoaViewModel.FaixaSalarialId);
 
             return View(pessoaViewModel);
         }
@@ -165,8 +165,8 @@ namespace GrupoPlennus.HabitacaoMvc.Controllers
             ViewBag.TipoVeiculoId = new SelectList(_tipoVeiculoApp.GetAll(), "Id", "Descricao", pessoa.TipoVeiculoId);
             ViewBag.AplicacoesForaCaixaId = new SelectList(_aplicacoesForaCaixaApp.GetAll(), "Id", "Descricao", pessoa.AplicacoesForaCaixaId);
             ViewBag.EntidadeId = new SelectList(_entidadeApp.GetAll(), "Id", "NomeFantasia", pessoa.EntidadeId);
-            ViewBag.FaixaSalarialId = new SelectList(_faixaSalarialApp.GetAll(), "Id", "Descricao", pessoa.FaixaSalariaId);
-            ViewBag.RendaId = new SelectList(_rendaApp.GetAll(), "Id", "Descricao", pessoa.FaixaSalariaId);
+            ViewBag.FaixaSalarialId = new SelectList(_faixaSalarialApp.GetAll(), "Id", "Descricao", pessoa.FaixaSalarialId);
+            ViewBag.RendaId = new SelectList(_rendaApp.GetAll(), "Id", "Descricao", pessoa.FaixaSalarialId);
             return View(pessoa);
         }
 
@@ -179,8 +179,14 @@ namespace GrupoPlennus.HabitacaoMvc.Controllers
             TempData["PessoaId"] = pessoa.Id;
             return RedirectToAction("Index", "Dependente");
         }
-      
-       
+
+        public ActionResult Conjuge(int id)
+        {
+            var pessoa = _pessoaApp.GetById(id);
+            TempData["Pessoa"] = pessoa;
+            TempData["PessoaId"] = pessoa.Id;
+            return RedirectToAction("Index", "Conjuge");
+        }
         // GET: Pessoa/Delete/5
         public ActionResult Delete(int id)
         {
