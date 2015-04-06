@@ -9,6 +9,7 @@ namespace GrupoPlennus.HabitacaoMvc.ViewModels
         public int Id { get; set; }
         public string Nome { get; set; }
         [Display(Name ="Dt. Nascimento")]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime DataNascimento { get; set; }
         [Display(Name ="Sexo")]
         public int SexoId { get; set; }

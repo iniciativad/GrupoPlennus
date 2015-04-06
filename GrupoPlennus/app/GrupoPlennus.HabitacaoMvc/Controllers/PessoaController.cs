@@ -114,7 +114,7 @@ namespace GrupoPlennus.HabitacaoMvc.Controllers
             ViewBag.AplicacoesForaCaixaId = new SelectList(_aplicacoesForaCaixaApp.GetAll(), "Id", "Descricao", pessoa.AplicacoesForaCaixaId);
             ViewBag.EntidadeId = new SelectList(_entidadeApp.GetAll(), "Id", "NomeFantasia", pessoa.EntidadeId);
             ViewBag.FaixaSalarialId = new SelectList(_faixaSalarialApp.GetAll(), "Id", "Descricao",pessoa.FaixaSalarialId);
-            ViewBag.RendaId = new SelectList(_rendaApp.GetAll(), "Id", "Descricao",pessoa.FaixaSalarialId);
+            ViewBag.RendaId = new SelectList(_rendaApp.GetAll(), "Id", "Descricao",pessoa.RendaId);
             return View(pessoa);
         }
 
@@ -137,7 +137,7 @@ namespace GrupoPlennus.HabitacaoMvc.Controllers
             ViewBag.AplicacoesForaCaixaId = new SelectList(_aplicacoesForaCaixaApp.GetAll(), "Id", "Descricao", pessoaViewModel.AplicacoesForaCaixaId);
             ViewBag.EntidadeId = new SelectList(_entidadeApp.GetAll(), "Id", "NomeFantasia", pessoaViewModel.EntidadeId);
             ViewBag.FaixaSalarialId = new SelectList(_faixaSalarialApp.GetAll(), "Id", "Descricao", pessoaViewModel.FaixaSalarialId);
-            ViewBag.RendaId = new SelectList(_rendaApp.GetAll(), "Id", "Descricao", pessoaViewModel.FaixaSalarialId);
+            ViewBag.RendaId = new SelectList(_rendaApp.GetAll(), "Id", "Descricao", pessoaViewModel.RendaId);
 
             return View(pessoaViewModel);
         }
@@ -166,7 +166,7 @@ namespace GrupoPlennus.HabitacaoMvc.Controllers
             ViewBag.AplicacoesForaCaixaId = new SelectList(_aplicacoesForaCaixaApp.GetAll(), "Id", "Descricao", pessoa.AplicacoesForaCaixaId);
             ViewBag.EntidadeId = new SelectList(_entidadeApp.GetAll(), "Id", "NomeFantasia", pessoa.EntidadeId);
             ViewBag.FaixaSalarialId = new SelectList(_faixaSalarialApp.GetAll(), "Id", "Descricao", pessoa.FaixaSalarialId);
-            ViewBag.RendaId = new SelectList(_rendaApp.GetAll(), "Id", "Descricao", pessoa.FaixaSalarialId);
+            ViewBag.RendaId = new SelectList(_rendaApp.GetAll(), "Id", "Descricao", pessoa.RendaId);
             return View(pessoa);
         }
 

@@ -5,10 +5,10 @@
     var PessoaId = TempData["PessoaId"];
 }
 
-<h2>Index</h2>
+<h2>Cônjuge</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create", new { id = PessoaId })
+    @Html.ActionLink(" Cadastrar Cônjuge", "Create","Conjuge", new { id = PessoaId }, new { @class = "btn btn-success fa fa-user-plus" })
 </p>
 <table class="table">
     <tr>
@@ -58,9 +58,9 @@
         </td>
         
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+            @Html.ActionLink("  Atualizar dados", "Edit",  new { id = item.Id }, new { @class = "btn btn-warning fa fa-file-text" }) |
+            @Html.ActionLink(" Detalhar dados", "Details", new { id = item.Id }, new { @class = "btn btn-primary fa  fa-info-circle" }) |
+            @Html.ActionLink(" Delete", "Delete", new { id=item.Id }, new { @class = "btn btn-danger fa  fa-trash" })
         </td>
     </tr>
 }

@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<GrupoPlennus.HabitacaoMvc.ViewModels.EntidadeViewModel>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Entidade";
 }
 
-<h2>Index</h2>
+<h2>Entidade</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink(" Nova Entidade", "Create", "Entidade", new { area = "" }, new { @class = "btn btn-success fa fa-university" })
 </p>
 <table class="table">
     <tr>
@@ -51,9 +51,8 @@
         </td>
         
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+            @Html.ActionLink("  Atualizar dados", "Edit", new { id = item.Id }, new { @class = "btn btn-warning fa fa-file-text" }) |
+            @Html.ActionLink(" Detalhar", "Details", new { id = item.Id }, new { @class = "btn btn-primary fa  fa-info-circle" })
         </td>
     </tr>
 }

@@ -1,13 +1,13 @@
 ﻿@model GrupoPlennus.HabitacaoMvc.ViewModels.EntidadeMasterViewModel
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Entidade Master";
 }
 
-<h2>Details</h2>
+<h2>Detalhes</h2>
 
 <div>
-    <h4>EntidadeMasterViewModel</h4>
+    <h4>Entidade Master</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -189,6 +189,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("  Atualizar dados", "Edit", new { id = Model.Id }, new { @class = "btn btn-warning fa fa-file-text" }) |
+    @Html.ActionLink("  VOLTAR", "Index",  new { area = "" }, new { @class = "btn btn-danger fa fa-reply" })
 </p>

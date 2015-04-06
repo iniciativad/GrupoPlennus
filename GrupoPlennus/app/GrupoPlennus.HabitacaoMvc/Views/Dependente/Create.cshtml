@@ -5,7 +5,7 @@
     var PessoaId = ViewBag.PessoaId;
 }
 
-<h2>Create</h2>
+<h2>Novo Cadastro</h2>
 
 
 @using (Html.BeginForm()) 
@@ -13,7 +13,7 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>DependenteViewModel</h4>
+        <h4>Dependente</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         @Html.Hidden("PessoaId")
@@ -36,7 +36,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.SexoId, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-               @Html.DropDownList("SexoId", String.Empty)
+               @Html.DropDownList("SexoId", null, String.Empty, new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.SexoId, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -60,7 +60,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.GrauInstrucaoId, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownList("GrauInstrucaoId", String.Empty)
+                @Html.DropDownList("GrauInstrucaoId", null, String.Empty, new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.GrauInstrucaoId, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -93,14 +93,14 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Salvar" class="btn btn-success" />
             </div>
         </div>
     </div>
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+  @Html.ActionLink("  VOLTAR", "Index", "Dependente", new { area = "" }, new { @class = "btn btn-danger fa fa-reply" })
 </div>
 
 @section Scripts {

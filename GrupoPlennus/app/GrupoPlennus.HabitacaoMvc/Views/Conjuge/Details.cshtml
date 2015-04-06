@@ -1,13 +1,13 @@
 ﻿@model GrupoPlennus.HabitacaoMvc.ViewModels.ConjugeViewModel
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Conjuge";
 }
 
-<h2>Details</h2>
+<h2>Detalhes</h2>
 
 <div>
-    <h4>ConjugeViewModel</h4>
+    <h4>Conjuge</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -39,7 +39,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.SexoId)
+            @Html.DisplayFor(model => model.Sexo.Descricao)
         </dd>
 
         <dt>
@@ -47,7 +47,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.NacionalidadeId)
+            @Html.DisplayFor(model => model.Nacionalidade.Descricao)
         </dd>
 
         <dt>
@@ -135,7 +135,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.EstadoCivilId)
+            @Html.DisplayFor(model => model.EstadoCivil.Descricao)
         </dd>
 
         <dt>
@@ -151,7 +151,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.AtividadeId)
+            @Html.DisplayFor(model => model.Atividade.Descricao)
         </dd>
 
         <dt>
@@ -215,7 +215,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.NaturalidadeId)
+            @Html.DisplayFor(model => model.Nacionalidade.Descricao)
         </dd>
 
         <dt>
@@ -239,7 +239,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.GrauInstrucaoId)
+            @Html.DisplayFor(model => model.GrauInstrucao.Descricao)
         </dd>
 
         <dt>
@@ -359,7 +359,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.TipoImovelId)
+            @Html.DisplayFor(model => model.TipoImovel.Descricao)
         </dd>
 
         <dt>
@@ -367,31 +367,19 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.TipoVeiculoId)
+            @Html.DisplayFor(model => model.TipoVeiculo.Descricao)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.PessoaId)
-        </dt>
+       
 
-        <dd>
-            @Html.DisplayFor(model => model.PessoaId)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.DataCadastro)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.DataCadastro)
-        </dd>
+       
 
         <dt>
             @Html.DisplayNameFor(model => model.FaixaSalarialId)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.FaixaSalarialId)
+            @Html.DisplayFor(model => model.FaixaSalarial.Descricao)
         </dd>
 
         <dt>
@@ -399,12 +387,12 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.RendaId)
+            @Html.DisplayFor(model => model.Renda.Descricao)
         </dd>
 
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("  Atualizar dados", "Edit", "Conjuge", new { id = Model.Id }, new { @class = "btn btn-warning fa fa-file-text" }) |
+    @Html.ActionLink("  VOLTAR", "Index", "Conjuge", new { id = Model.PessoaId }, new { @class = "btn btn-danger fa fa-reply" })
 </p>

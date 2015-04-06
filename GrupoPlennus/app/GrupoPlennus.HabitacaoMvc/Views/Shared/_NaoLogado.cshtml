@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -22,16 +26,14 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Entidade Master", "Index", "EntidadeMaster")</li>
-                    <li>@Html.ActionLink("Entidades", "Index", "Entidade")</li>
-                    <li>@Html.ActionLink("Associados", "Index", "Pessoa")</li>
+                    
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
     </div>
     <div class="container body-content">
-        
+        <p></p>
         @RenderBody()
         <hr />
         <footer>

@@ -1,13 +1,12 @@
 ﻿@model IEnumerable<GrupoPlennus.HabitacaoMvc.ViewModels.PessoaViewModel>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Chefes de familia";
 }
 
-<h2>Index</h2>
-
+<h3>Chefes de Familia</h3>
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink(" Nova Pessoa Chefe de Familia", "Create","Pessoa", new { area = "" }, new { @class = "btn btn-success fa fa-user-plus" })
 </p>
 <table class="table">
     <tr>
@@ -37,10 +36,10 @@
         </td>
         
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Dependente", "Dependente", new { id=item.Id }) |
-            @Html.ActionLink("Conjuge", "Conjuge", new { id = item.Id })
+           @Html.ActionLink("  Atualizar dados", "Edit", "Pessoa", new { id = item.Id }, new { @class = "btn btn-warning fa fa-file-text" }) |
+            @Html.ActionLink(" Ficha", "Details", new { id=item.Id }, new { @class = "btn btn-primary fa  fa-info-circle" }) |
+            @Html.ActionLink(" Conjuge", "Conjuge", new { id = item.Id }, new { @class = "btn btn-success fa  fa-user" }) |
+            @Html.ActionLink(" Dependentes", "Dependente", new { id = item.Id }, new { @class = "btn btn-success fa  fa-users" })
         </td>
     </tr>
 }

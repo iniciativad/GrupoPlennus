@@ -126,5 +126,12 @@ namespace GrupoPlennus.HabitacaoMvc.Controllers
                 return View();
             }
         }
+
+        public ActionResult DependentesPorResponsavel(int id)
+        {
+            var dependentes = _depApp.BuscaPorResponsavel(id);
+            var dependentesViewModel = Mapper.Map<IEnumerable<Dependente>, IEnumerable<DependenteViewModel>>(dependentes);
+            return PartialView(dependentesViewModel);
+        }
     }
 }

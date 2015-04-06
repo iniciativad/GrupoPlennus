@@ -1,502 +1,120 @@
 ﻿@model GrupoPlennus.HabitacaoMvc.ViewModels.PessoaViewModel
 
 @{
-    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Relatorio.cshtml";
 }
-@Html.DisplayNameFor(model => model.Nome)
-<h2>Details</h2>
 
-<div>
-  
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Nome)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Nome)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Cpf)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Cpf)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Nis)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Nis)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.SexoId)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Sexo.Descricao)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.NacionalidadeId)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Nacionalidade.Descricao)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.DataNascimento)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.DataNascimento)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.RgNum)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.RgNum)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.RgOrgaoEmissor)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.RgOrgaoEmissor)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.RgSiglaOrgaoEmissor)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.RgSiglaOrgaoEmissor)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.RgDataExpedicao)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.RgDataExpedicao)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TituloEleitor)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TituloEleitor)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TituloEleitorZona)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TituloEleitorZona)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TituloEleitorSecao)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TituloEleitorSecao)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TituloEleitorMunicipio)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TituloEleitorMunicipio)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TituloEleitorUf)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TituloEleitorUf)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Pis)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Pis)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.EstadoCivilId)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.EstadoCivil.Descricao)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Profissao)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Profissao)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.AtividadeId)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Atividade.Descricao)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TempoTrabalhoAtividadeAnos)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TempoTrabalhoAtividadeAnos)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TempoTrabalhoAtividadeMeses)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TempoTrabalhoAtividadeMeses)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.LocalOndeExerceAtividade)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.LocalOndeExerceAtividade)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.BancoAgencia)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.BancoAgencia)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.BancoOperacao)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.BancoOperacao)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.BancoConta)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.BancoConta)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ContaConjuta)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ContaConjuta)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.NaturalidadeId)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Naturalidade.Descricao)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.MenorEmancipado)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.MenorEmancipado)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.MenorAssistido)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.MenorAssistido)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.GrauInstrucaoId)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.GrauInstrucao.Descricao)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Cep)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Cep)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Logradouro)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Logradouro)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Numero)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Numero)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Complemento)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Complemento)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Bairro)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Bairro)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Cidade)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Cidade)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Uf)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Uf)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Telefone)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Telefone)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Celular)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Celular)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Email)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Email)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ResidenciaAtualId)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ResidenciaAtual.Descricao)
-        </dd>
-
-        <dt>
-            @Html.DisplayName("Faixa Salarial")
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.FaixaSalarial.Descricao)
-        </dd>
-
-        <dt>
-            @Html.DisplayName("Renda")
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Renda.Descricao)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.UltimoEmpregoAnos)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.UltimoEmpregoAnos)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.UltimoEmpregoMes)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.UltimoEmpregoMes)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.UltimoEmpregoAnoDesligamento)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.UltimoEmpregoAnoDesligamento)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.CargoFuncao)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.CargoFuncao)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.DocumentosComplementaresId)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.DocumentosComplementares.Descricao)
-        </dd>
-
-       
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TipoImovelId)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TipoImovel.Descricao)
-        </dd>
-
-       
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TipoVeiculoId)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TipoVeiculo.Descricao)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.CartaoCredito)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.CartaoCredito)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ContaOutrosBancos)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ContaOutrosBancos)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.AplicacoesForaCaixaId)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.AplicacoesForaCaixa.Descricao)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.DependentesQtd)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.DependentesQtd)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.DependentesQtdSemRenda)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.DependentesQtdSemRenda)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.DependentesTotalRendaLiquida)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.DependentesTotalRendaLiquida)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.PessoaIdosaQtd)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.PessoaIdosaQtd)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.PessoaDeficienteQtd)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.PessoaDeficienteQtd)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.PessoaMoradiaQtd)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.PessoaMoradiaQtd)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.EntidadeId)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Entidade.NomeFantasia)
-        </dd>
-
-    </dl>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Ficha de inscrição - @Html.DisplayFor(model => model.Entidade.NomeFantasia)</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <b>@Html.DisplayNameFor(model => model.Nome):</b> @Html.DisplayFor(model => model.Nome)
+                | <b>@Html.DisplayNameFor(model => model.DataNascimento):</b> @Html.DisplayFor(model => model.DataNascimento)
+                | <b>@Html.DisplayNameFor(model => model.Cpf):</b> @Html.DisplayFor(model => model.Cpf)
+                | <b>@Html.DisplayNameFor(model => model.Nis):</b> @Html.DisplayFor(model => model.Nis)
+                | <b>@Html.DisplayNameFor(model => model.SexoId):</b> @Html.DisplayFor(model => model.Sexo.Descricao)
+                | <b>@Html.DisplayNameFor(model => model.NacionalidadeId):</b> @Html.DisplayFor(model => model.Nacionalidade.Descricao)
+            </li>
+            <li class="list-group-item">
+                <b>@Html.DisplayNameFor(model => model.RgNum):</b> @Html.DisplayFor(model => model.RgNum)
+                | <b>@Html.DisplayNameFor(model => model.RgOrgaoEmissor):</b> @Html.DisplayFor(model => model.RgOrgaoEmissor)
+                | <b>@Html.DisplayNameFor(model => model.RgSiglaOrgaoEmissor):</b> @Html.DisplayFor(model => model.RgSiglaOrgaoEmissor)
+                | <b>@Html.DisplayNameFor(model => model.RgDataExpedicao):</b> @Html.DisplayFor(model => model.RgDataExpedicao)
+                | <b>@Html.DisplayNameFor(model => model.NaturalidadeId):</b> @Html.DisplayFor(model => model.Naturalidade.Descricao)
+                | <b>@Html.DisplayNameFor(model => model.Pis):</b> @Html.DisplayFor(model => model.Pis)
+            </li>
+
+            <li class="list-group-item">
+                <b>@Html.DisplayNameFor(model => model.TituloEleitor):</b> @Html.DisplayFor(model => model.TituloEleitor)
+                | <b>@Html.DisplayNameFor(model => model.TituloEleitorZona):</b> @Html.DisplayFor(model => model.TituloEleitorZona)
+                | <b>@Html.DisplayNameFor(model => model.TituloEleitorSecao):</b> @Html.DisplayFor(model => model.TituloEleitorSecao)
+                | <b>@Html.DisplayNameFor(model => model.TituloEleitorMunicipio):</b> @Html.DisplayFor(model => model.TituloEleitorMunicipio)
+                | <b>@Html.DisplayNameFor(model => model.TituloEleitorUf):</b> @Html.DisplayFor(model => model.TituloEleitorUf)
+            </li>
+            <li class="list-group-item">
+                <b>@Html.DisplayNameFor(model => model.EstadoCivilId):</b> @Html.DisplayFor(model => model.EstadoCivil.Descricao)
+                | <b>@Html.DisplayNameFor(model => model.Profissao):</b> @Html.DisplayFor(model => model.Profissao)
+                | <b>@Html.DisplayNameFor(model => model.AtividadeId):</b> @Html.DisplayFor(model => model.Atividade.Descricao)
+                | <b>@Html.DisplayNameFor(model => model.TempoTrabalhoAtividadeAnos):</b> @Html.DisplayFor(model => model.TempoTrabalhoAtividadeAnos)
+                | <b>@Html.DisplayNameFor(model => model.TempoTrabalhoAtividadeMeses):</b> @Html.DisplayFor(model => model.TempoTrabalhoAtividadeMeses)
+                | <b>@Html.DisplayNameFor(model => model.LocalOndeExerceAtividade):</b> @Html.DisplayFor(model => model.LocalOndeExerceAtividade)
+                | <b>@Html.DisplayNameFor(model => model.BancoAgencia):</b> @Html.DisplayFor(model => model.BancoAgencia)
+                | <b>@Html.DisplayNameFor(model => model.BancoOperacao):</b> @Html.DisplayFor(model => model.BancoOperacao)
+                | <b>@Html.DisplayNameFor(model => model.BancoConta):</b> @Html.DisplayFor(model => model.BancoConta)
+                | <b>@Html.DisplayNameFor(model => model.ContaConjuta):</b> @Html.DisplayFor(model => model.ContaConjuta)
+                | <b>@Html.DisplayNameFor(model => model.MenorEmancipado):</b> @Html.DisplayFor(model => model.MenorEmancipado)
+                | <b>@Html.DisplayNameFor(model => model.MenorAssistido):</b>  @Html.DisplayFor(model => model.MenorAssistido)
+                | <b>@Html.DisplayNameFor(model => model.GrauInstrucaoId):</b> @Html.DisplayFor(model => model.GrauInstrucao.Descricao)
+
+            </li>
+            <li class="list-group-item">
+                <b>@Html.DisplayNameFor(model => model.Cep):</b> @Html.DisplayFor(model => model.Cep)
+                | <b>@Html.DisplayNameFor(model => model.Logradouro):</b> @Html.DisplayFor(model => model.Logradouro)
+                | <b>@Html.DisplayNameFor(model => model.Numero):</b> @Html.DisplayFor(model => model.Numero)
+                | <b>@Html.DisplayNameFor(model => model.Complemento):</b> @Html.DisplayFor(model => model.Complemento)
+                | <b>@Html.DisplayNameFor(model => model.Bairro):</b> @Html.DisplayFor(model => model.Bairro)
+                | <b>@Html.DisplayNameFor(model => model.Cidade):</b> @Html.DisplayFor(model => model.Cidade)
+                | <b>@Html.DisplayNameFor(model => model.Uf):</b> @Html.DisplayFor(model => model.Uf)
+                | <b>@Html.DisplayNameFor(model => model.Telefone):</b> @Html.DisplayFor(model => model.Telefone)
+                | <b>@Html.DisplayNameFor(model => model.Celular):</b> @Html.DisplayFor(model => model.Celular)
+                | <b>@Html.DisplayNameFor(model => model.Email):</b> @Html.DisplayFor(model => model.Email)
+                | <b>@Html.DisplayNameFor(model => model.ResidenciaAtualId):</b> @Html.DisplayFor(model => model.ResidenciaAtual.Descricao)
+            </li>
+            <li class="list-group-item">
+                <b>@Html.DisplayName("Renda"):</b> @Html.DisplayFor(model => model.Renda.Descricao)
+                | <b>@Html.DisplayNameFor(model => model.UltimoEmpregoAnos):</b> @Html.DisplayFor(model => model.UltimoEmpregoAnos)
+                | <b>@Html.DisplayNameFor(model => model.UltimoEmpregoMes):</b> @Html.DisplayFor(model => model.UltimoEmpregoMes)
+                | <b>@Html.DisplayNameFor(model => model.UltimoEmpregoAnoDesligamento):</b> @Html.DisplayFor(model => model.UltimoEmpregoAnoDesligamento)
+                | <b>@Html.DisplayNameFor(model => model.CargoFuncao):</b> @Html.DisplayFor(model => model.CargoFuncao)
+                | <b>@Html.DisplayNameFor(model => model.DocumentosComplementaresId):</b> @Html.DisplayFor(model => model.DocumentosComplementares.Descricao)
+
+            </li>
+            <li class="list-group-item">
+                <b>@Html.DisplayNameFor(model => model.TipoImovelId):</b> @Html.DisplayFor(model => model.TipoImovel.Descricao)
+                | <b>@Html.DisplayNameFor(model => model.TipoVeiculoId):</b> @Html.DisplayFor(model => model.TipoVeiculo.Descricao)
+                | <b>@Html.DisplayNameFor(model => model.CartaoCredito):</b> @Html.DisplayFor(model => model.CartaoCredito)
+                | <b>@Html.DisplayNameFor(model => model.ContaOutrosBancos):</b> @Html.DisplayFor(model => model.ContaOutrosBancos)
+                | <b>@Html.DisplayNameFor(model => model.AplicacoesForaCaixaId):</b> @Html.DisplayFor(model => model.AplicacoesForaCaixa.Descricao)
+            </li>
+            <li class="list-group-item">
+                <b>@Html.DisplayNameFor(model => model.DependentesQtd):</b> @Html.DisplayFor(model => model.DependentesQtd)
+                | <b>@Html.DisplayNameFor(model => model.DependentesQtdSemRenda):</b> @Html.DisplayFor(model => model.DependentesQtdSemRenda)
+                | <b>@Html.DisplayNameFor(model => model.DependentesTotalRendaLiquida):</b> @Html.DisplayFor(model => model.DependentesTotalRendaLiquida)
+                | <b>@Html.DisplayNameFor(model => model.PessoaIdosaQtd):</b> @Html.DisplayFor(model => model.PessoaIdosaQtd)
+                | <b>@Html.DisplayNameFor(model => model.PessoaDeficienteQtd):</b> @Html.DisplayFor(model => model.PessoaDeficienteQtd)
+                | <b>@Html.DisplayNameFor(model => model.PessoaMoradiaQtd):</b> @Html.DisplayFor(model => model.PessoaMoradiaQtd)
+
+
+            </li>
+        </ul>
+
+
+        <div>
+            @Html.Action(
+            "ConjugePorResponsavel",
+            "Conjuge",
+             new { id = Model.Id })
+        </div>
+        <div>
+            @Html.Action(
+            "DependentesPorResponsavel",
+            "Dependente",
+             new { id = Model.Id })
+        </div>
+    </div>
+    <div class="panel-footer">Assinatura</div>
 </div>
+
+
+
+
+
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("  Atualizar dados", "Edit", "Pessoa", new { id = Model.Id }, new { @class = "btn btn-warning fa fa-file-text" }) |
+    @Html.ActionLink("  VOLTAR", "Index", "Pessoa", new { area = "" }, new { @class = "btn btn-danger fa fa-reply" })
 </p>
+

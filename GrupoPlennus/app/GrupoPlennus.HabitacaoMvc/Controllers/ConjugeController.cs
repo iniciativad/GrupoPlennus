@@ -4,6 +4,7 @@ using GrupoPlennus.Domain.Entities;
 
 using GrupoPlennus.HabitacaoMvc.ViewModels;
 using System.Collections.Generic;
+using System.Linq;
 using System.Web.Mvc;
 
 namespace GrupoPlennus.HabitacaoMvc.Controllers
@@ -184,6 +185,13 @@ namespace GrupoPlennus.HabitacaoMvc.Controllers
             {
                 return View();
             }
+        }
+
+        public ActionResult ConjugePorResponsavel(int id)
+        {
+            var conjuge = _conjugeApp.BuscaPorResponsavel(id).FirstOrDefault();
+            var conjugeViewModel = Mapper.Map<Conjuge, ConjugeViewModel>(conjuge);
+            return PartialView(conjugeViewModel);
         }
     }
 }

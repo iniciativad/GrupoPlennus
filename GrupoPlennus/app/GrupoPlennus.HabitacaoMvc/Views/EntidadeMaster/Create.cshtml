@@ -1,10 +1,10 @@
 ﻿@model GrupoPlennus.HabitacaoMvc.ViewModels.EntidadeMasterViewModel
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Entidade Master";
 }
 
-<h2>Create</h2>
+<h2>Novo Cadastro</h2>
 
 
 @using (Html.BeginForm()) 
@@ -12,7 +12,7 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>EntidadeMasterViewModel</h4>
+        <h4>Entidade Master</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
@@ -193,14 +193,14 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Salvar" class="btn btn-success" />
             </div>
         </div>
     </div>
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("  VOLTAR", "Index", new { area = "" }, new { @class = "btn btn-danger fa fa-reply" })
 </div>
 
 @section Scripts {

@@ -25,6 +25,7 @@ namespace GrupoPlennus.HabitacaoMvc.ViewModels
         public int NacionalidadeId { get; set; }
         public virtual NacionalidadeViewModel Nacionalidade { get; set; }
         [Display(Name ="Dt. Nascimento")]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime DataNascimento { get; set; }
         [Display(Name ="Rg - Num.")]
         public string RgNum { get; set; }

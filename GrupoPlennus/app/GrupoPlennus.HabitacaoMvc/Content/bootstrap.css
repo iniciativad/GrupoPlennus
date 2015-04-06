@@ -593,11 +593,13 @@ ol ol {
 
 dl {
   margin-bottom: 20px;
+  
 }
 
 dt,
 dd {
   line-height: 1.428571429;
+  
 }
 
 dt {
@@ -614,9 +616,10 @@ dd {
     width: 160px;
     overflow: hidden;
     clear: left;
-    text-align: right;
+    text-align: left;
     text-overflow: ellipsis;
     white-space: nowrap;
+    
   }
   .dl-horizontal dd {
     margin-left: 180px;
